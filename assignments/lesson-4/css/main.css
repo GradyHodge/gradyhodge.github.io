@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Lato');
+
+p {
+    font-family: "Alegreya", Georgia, serif;
+  }
+h1 h2 h3 title nav {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+} 
+
+#logo {
+
+}
+#weatherSummary {
+
+}
+
+#heroImage {
+
+}
+
+#articleImage {
+
+}
+
+#contactInformation {
+
+}
+
+.motto {
+
+}
