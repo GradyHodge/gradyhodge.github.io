@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Lato');
+
+/*CodePen.io example (not working) 
+body {
+	background-color: rgba(146, 17, 17, 0.719);
+}
+
+header {
+	margin: 10px auto;
+	background-color: rgba(13, 117, 35, 0.616);
+	border: 1px solid #bbb;
+	box-shadow: 0 0 30px #777;
+	text-align: center;
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+*/
+
+body {
+  background-color: #bbb;
+}
+
+p {
+    font-family: "Alegreya", Georgia, serif;
+  }
+h1 h2 h3 title nav {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+} 
+
+#logo {
+
+}
+
+#title {
+
+}
+
+#weatherSummary {
+    margin: 10px auto;
+	background-color: rgba(13, 117, 35, 0.616);
+	border: 1px solid #bbb;
+	box-shadow: 0 0 30px #777;
+    text-align: center;
+    display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+
+#heroImage {
+
+}
+
+#articleImage {
+
+}
+
+#contactInformation {
+
+}
+
+.motto {
+
+}
