@@ -7,11 +7,11 @@
             CIT 230 WK 5 | Preston Town Portal | Grady Hodge | BYUI
         </title>
         <meta name="description" content="The Weather Site project basic build">
-        <link rel="stylesheet" href="assignments\lesson-5\normalize.css">
+        <!--<link rel="stylesheet" href="assignments\lesson-5\normalize.css"> -->
         <link rel="stylesheet" href="assignments\lesson-5\styles\small-5.css"> <!--mobile first design (start small and style up)-->
-        <link rel="stylesheet" media="screen and (min-width 780)" href="assignments\lesson-5\styles\large-5.css"> <!--css will apply to larger screens above the size of a tablet-->
+        <!--<link rel="stylesheet" media="screen and (min-width: 760)" {href="assignments\lesson-5\styles\large-5.css"} > css will apply to larger screens above the size of a tablet-->
     </head>
-    <body class="body">
+    <body>
 <!--
     <header>
             <h1 #title>PrestonWeather.com</h1>
@@ -24,8 +24,8 @@
 </header>
 -->
 <header>
-		<img #logo src="C:\Users\BossMonkey\Desktop\gradyhodge.github.io-master\assignments\lesson-4\images\Logo Unsplash Photo by J W on Unsplash 75142-unsplash.jpg" alt="The Preston Local Weather Site Logo. A mother holding an umbrell over her child.">
-	<section class="headings">
+		<img id="logo" width="75" height="75" src="C:\Users\BossMonkey\Desktop\gradyhodge.github.io-master\assignments\lesson-4\images\Logo Unsplash Photo by J W on Unsplash 75142-unsplash.jpg" alt="The Preston Local Weather Site Logo. A mother holding an umbrell over her child.">
+	<section id="title">
       <h1>Preston Local Weather Site</h1>
       <h3>When Local Weather is Critical to Your Plans</h3>
 	</section>
@@ -41,26 +41,30 @@
               </ul>
         </nav>
 <!--Weather Summary Section-->
-        <section>
-            <h1>Preston</h1>
-                <div #weatherSummary>
-                     WIDGET - weather summary
+        <section class="weatherSection">
+            <h2 id="weatherSecTitle">Preston</h2>
+                <div id="weatherSummary">
+                    <img id="heroImage" width="400" height="400" src="C:\Users\BossMonkey\Desktop\gradyhodge.github.io-master\assignments\lesson-4\images\Hero Unsplash Lightning Yellow Cloud Photo by Max LaRochelle on Unsplash421822-unsplash.jpg" alt="Giant Thunderstorm and colorful lightning strike">
+                     <section class="weatherWidget">
+                         <h3>WIDGET - weather summary</h3>
+                         <p>widget</p>
+                         <p>widget</p>
+                         <p>widget</p>
+                     </section>
                 </div>
-                <img #heroImage src="C:\Users\BossMonkey\Desktop\gradyhodge.github.io-master\assignments\lesson-4\images\Hero Unsplash Lightning Yellow Cloud Photo by Max LaRochelle on Unsplash421822-unsplash.jpg" alt="Giant Thunderstorm and colorful lightning strike">
         </section>
 <!--Article Section-->
         <article>
             <h3>Article Title</h3>
                 <address>by: author</address>
+                <img id="articleImage" src="C:\Users\BossMonkey\Desktop\gradyhodge.github.io-master\assignments\lesson-4\images\Snowy Umbrella Unsplash Photo by Craig Whitehead 495277-unsplash.jpg" alt="white snow stuck to a woman's black umbrella">
                 <p>
-                    Lorem Ipsum
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum     
                 </p>
-                <img #articleImage src="C:\Users\BossMonkey\Desktop\gradyhodge.github.io-master\assignments\lesson-4\images\Snowy Umbrella Unsplash Photo by Craig Whitehead 495277-unsplash.jpg" alt="white snow stuck to a woman's black umbrella">
-
         </article>
 <!--Contact Information-->
-        <section #contactInformation>
-
+        <section id="contactInformation">
+            <h3>Contact Info</h3>
         </section>
 <!--Footer Section-->
         <footer>
