@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Alegreya|Lato');
+
+h1 {
+    font-family: "Lobster, Lato, Arial, Helvetica, san-serif";
+}
+
+p {
+    font-family: "Alegreya", "Georgia", "serif";
+    font-size: 30px;
+    background: red;
+
+}
