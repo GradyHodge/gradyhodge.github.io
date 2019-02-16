@@ -9,41 +9,77 @@
         <meta name="description" content="The Weather Site project basic build">
         <link rel="stylesheet" href="../css/small-4.css">
     <body>
-<!--
-    <header>
-           
-            <h1 #title>PrestonWeather.com</h1>
-
-<div .motto>
-        <h2>When Knowing Local Weather is Critical to Your Life</h2> 
-    </div>
-    <img #logo src="" alt="official logo of The Weather Site" >
-
-</header>
--->
 <header>
 		<img src="../images/logo-image.jpg" alt="The Preston Local Weather Site Logo. A mother holding an umbrell over her child.">
 	<section class="headings">
       <h1>Preston Local Weather Site</h1>
-      <h3>When Local Weather is Critical to Your Plans</h3>
-	</section>
+      <h3 class="motto">When Local Weather is Critical to Your Plans</h3>
+    </section>
+    <!--<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
+    <div id="menuToggle">
+<!-- CodePen.io Hamburger menu ~ credit to Erik Terwan
+
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      
+      <input type="checkbox" />
+      
+      
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      
+      <ul id="menu">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Info</li></a>
+        <a href="#"><li>Contact</li></a>
+        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+      </ul>
+    </div>
+  </nav>
+-->
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          <ul id="menu">
+             <li><a href="#">Preston</a></li>
+             <li><a href="#">Soda Springs</a></li>
+             <li><a href="#">Fish Haven</a></li>
+             <li><a href="#">Other City</a></li>
+             <li><a href="#">Storm Center</a></li>
+             <li><a href="#">Gallery</a></li>
+          </ul>
+        </div>
+    </nav>
 </header>
-        
-        <nav>
-            <ul>
-                 <li><a href=""></a>Preston</li>
-                 <li><a href=""></a>Soda Springs</li>
-                 <li><a href=""></a>Fish Haven</li>
-                 <li><a href=""></a>Other City</li>
-                 <li><a href=""></a>Storm Center</li>
-                 <li><a href=""></a>Gallery</li>
-              </ul>
-        </nav>
+
+<h1 id="title">Preston</h1>
+
 <!--Weather Summary Section-->
         <section>
-            <h1>Preston</h1>
-                <div #weatherSummary>
-                     WIDGET - weather summary
+                <div id="weatherSummary">
+                     WIDGET - WEATHER SUMMARY <br>
+                     information bar <br>
+                     information bar <br>
+                     information bar <br>
+                     information bar <br>
+                     information bar <br>
                 </div>
                 <img #heroImage src="../images/Hero-Unsplash-Lightning-Cloud.jpg">
         </section>
@@ -60,16 +96,15 @@
                     Esse eius assumenda ullam vitae est atque nemo velit fugiat quidem deserunt blanditiis eum et rerum debitis, dolorum doloremque labore. Consectetur repellendus sint non hic aspernatur placeat laudantium? Illo, exercitationem!
                 </p>
                 <img #articleImage src="../images/Snowy-Umbrella-unsplash.jpg" alt="white snow stuck to a woman's black umbrella">
-
         </article>
 <!--Contact Information-->
-        <section #contactInformation>
-
+        <section class="contactInformation">
+            <p>Contact Information</p>
+            <div>MAP</div>
         </section>
 <!--Footer Section-->
         <footer>
             Footer Bar
         </footer>
-
     </body>
 </html>
