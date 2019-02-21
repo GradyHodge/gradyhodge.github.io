@@ -1,35 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Lato');
 
-/*Horizontal Nav Bar styling applies on media query screen width larger than 760*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #35a7ff;
+/*RESPONSIVE HAMBURGER MENU FROM CODEPEN BY JASON BLAZZARD*/
+
+* { margin: 0; padding: 0;}
+body { background-color: #ddd; }
+header { background-color: #bbb; text-align: center;}
+h1 { padding: .5rem; }
+
+nav {	margin: 0 auto;	max-width: 760px; background-color: #000;	}
+#menu { list-style: none; text-align: center; }
+  #menu li:first-child { display: block;}
+  #menu li { display: none;}
+  #menu a {	display: block;	color: #fff; padding: .75rem;	text-align: center;	text-decoration: none;}
+  #menu a:hover {	color: #000; background-color: #fff; font-weight: 700;	}
+
+/* the onclick JS toggles the .repsonsive class from display none (#menu li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+	.responsive li { display: block; }
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 45em) {
+  #menu li:first-child { display: none;	}
+	#menu li { display: inline-block; margin-right: 1rem;}
+	#menu li a { color: yellow;}
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-a:hover:not(.active) {
-  background-color: #ffe74c;
-}
-
-.active {
-  background-color:#4CAF50;
-}
-
-/* above Horizontal Nav Bar styling applies on media query screen width larger than 760*/
+/*~ABOVE~ RESPONSIVE HAMBURGER MENU FROM CODEPEN BY JASON BLAZZARD*/
 
 body {
 	background-color: #0f83b1b7;

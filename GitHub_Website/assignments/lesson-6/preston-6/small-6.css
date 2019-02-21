@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Lato');
 
-@media screen only and (max-width: 760px) {
-
 /* 
 CREDIT TO CODE PEN BY ERIK TERWAN FOR  Hamburger Menu Experiment
 */
@@ -183,6 +181,16 @@ h1 h2 h3 title nav {
 	font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
+footer {
+  position: absolute;
+  bottom: 1;
+  background-color: hsl(202, 10%, 21%);
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 6px;
+
+}
 
 #logo {
 

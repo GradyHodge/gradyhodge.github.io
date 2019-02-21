@@ -8,15 +8,21 @@
         </title>
         <meta name="description" type="text/css" content="The Weather Site project basic build">
 
-        <!--<link rel="stylesheet" type="text/css" href="small-5.css"> added to top to get CSS file to work, the links below aren't working-->
-        <link rel="stylesheet" type="text/css" href="normalize.css">
-        <link rel="stylesheet" type="text/css" media="screen and (max-width: 760px)" href="small-5.css"> <!--mobile first design (desing small screen first and style up)-->
-        <link rel="stylesheet" type="text/css" media="screen and (min-width: 760px)" href="large-5.css"> <!--css will apply to larger screens above the size of a tablet-->    
-  
+        
+        <link rel="stylesheet" type="text/css" href="../normalize.css">
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 760px)" href="../preston-6/small-6.css"> <!--mobile first design (desing small screen first and style up)-->
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 760px)" href="../preston-6/large-6.css"> <!--css will apply to larger screens above the size of a tablet-->    
+        <link rel="stylesheet" type="text/css" href="small-6.css"> <!--added to top to get CSS file to work, the links below aren't working-->
+    
+        <script type="text/javascript">
+            var year = new Date().getFullYear;
+            var date = '&copy; Weather Site Project ${year}. All Rights Reserved.';
+            document.getElementsByTagName('footer')[0].innerHTML = year;
+        </script>
     </head>
     <body>
             <header>
-                    <img src="../styles/images/logo-image.jpg" alt="The Preston Local Weather Site Logo. A mother holding an umbrell over her child.">
+                    <img src="../styles-6/images-6/logo-image.jpg" alt="The Preston Local Weather Site Logo. A mother holding an umbrella over her child.">
                 <section class="headings">
                   <h1>Preston Local Weather Site | WK 5</h1>
                   <h3 class="motto">When Local Weather is Critical to Your Plans</h3>
@@ -27,6 +33,7 @@
             <nav role="navigation">
                 <div id="menuToggle">
             <!-- CodePen.io Hamburger menu ~ credit to Erik Terwan
+
             
                   A fake / hidden checkbox is used as click reciever,
                   so you can use the :checked selector on it.
@@ -64,6 +71,7 @@
                         <span></span>
                         <span></span>
                       <ul id="menu">
+                         <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li><!--from codepen-->
                          <li><a href="#">Preston</a></li>
                          <li><a href="#">Soda Springs</a></li>
                          <li><a href="#">Fish Haven</a></li>
@@ -87,7 +95,7 @@
                                  information bar <br>
                                  information bar <br>
                             </div>
-                            <img #heroImage src="../styles/images/Hero-Unsplash-Lightning-Cloud.jpg" alt="brilliant thunderstorm purple and yellow lighting brightening the clouds while striking the city skyline">
+                            <img #heroImage src="../styles-6/images-6/Hero-Unsplash-Lightning-Cloud.jpg" alt="brilliant thunderstorm purple and yellow lighting brightening the clouds while striking the city skyline">
                     </section>
             <!--Article Section-->
                     <article>
@@ -101,7 +109,7 @@
                                 Quam pariatur numquam porro vero quibusdam reiciendis accusamus, minus saepe laborum beatae dicta culpa, et corporis quod velit ad harum aliquam sed eligendi ut. Saepe ad architecto magnam iste quis.
                                 Esse eius assumenda ullam vitae est atque nemo velit fugiat quidem deserunt blanditiis eum et rerum debitis, dolorum doloremque labore. Consectetur repellendus sint non hic aspernatur placeat laudantium? Illo, exercitationem!
                             </p>
-                            <img #articleImage src="../styles/images/Snowy-Umbrella-unsplash.jpg" alt="white snow stuck to a woman's black umbrella">
+                            <img #articleImage src="../styles-6/images-6/Snowy-Umbrella-unsplash.jpg" alt="white snow stuck to a woman's black umbrella">
                     </article>
             <!--Contact Information-->
                     <section class="contactInformation">
@@ -110,7 +118,8 @@
                     </section>
             <!--Footer Section-->
                     <footer>
-                        Footer Bar
+                        <h3>Footer Bar <br></h3>
+                        &copy;  Weather Site Project WK 6 GWH 
                     </footer>
                 </body>
             </html>
