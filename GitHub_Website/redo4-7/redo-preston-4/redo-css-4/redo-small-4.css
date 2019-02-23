@@ -1,0 +1,93 @@
+/*
+REDO WK 4 CSS FILE
+*/
+body {
+    background-color:#84cdf5;
+    max-width: 95%;
+    margin: 15px;
+}
+
+header {
+    background-color: #35a7ff;
+}
+
+article {
+
+}
+
+footer {
+ background-color: #274032;
+ color: white;
+ padding: 50px;
+ text-align: center;
+ }
+
+/*
+SECTION IDs
+*/
+#siteLogo{
+    margin: 10px auto;
+    text-align: center;
+}
+
+#siteLogo .logo .pageTitle .motto {
+display: inline-block;
+vertical-align: middle;
+}
+
+#mainTitle {
+font-size: 3em;
+}
+
+#weatherSummary {
+background-color: lightblue;
+}
+
+#heroImage {
+  
+}
+/*
+CLASS SELECTORS
+*/
+
+.motto {
+
+}
+.widgetBox {
+background-color: #ffe74c;
+border: 2px white;
+max-width: 200px;
+padding: 5px;
+position: relative;
+top:50px;
+left: 45px;
+z-index: 3;
+}
+
+.heroBox {
+position: relative;
+top: -185px;
+left: 10px;
+z-index: 2;
+max-width: 90%;
+}
+
+.articleBox {
+background-color: #35a7ff;
+width: 90%;
+padding: 20px;
+}
+
+.articleImage {
+align-content: 
+}
+
+.contactInfo {
+background-color: #1a5777;
+}
+
+.mapImage {
+
+}
+
+
