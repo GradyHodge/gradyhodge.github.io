@@ -1,0 +1,155 @@
+/*CSS GRID TEMPLATE AREA EXPERIMENT*/
+
+body, html {
+    height: 100vh;
+    color: grey;
+    font-size: 2em;
+
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:
+        "header header header"
+        "section1 section2 section3"
+        "section4 section5 section6"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: lightblue;
+}
+
+.section1 {
+    grid-area: section1;
+    padding:5px;
+    background-color: orange;
+    margin: 5px;
+}
+
+.section2 {
+    grid-area: section2;
+    padding:5px;
+    background-color: red;
+    margin: 5px;
+}
+
+.section3 {
+    grid-area: section3;
+    padding:5px;
+    background-color: orange;
+    margin: 5px;
+}
+
+.section4 {
+    grid-area: section4;
+    padding:5px;
+    background-color: red;
+    margin: 5px;
+}
+
+.section5 {
+    grid-area: section5;
+    padding:5px;
+    background-color: orange;
+    margin: 5px;
+}
+
+.section6 {
+    grid-area: section6;
+    padding:5px;
+    background-color: red;
+    margin: 5px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    margin: 5px;
+}
+
+img {
+    display: block;
+    margin: auto auto auto auto;
+    vertical-align: middle;
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 700px) {
+
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(auto, 5);
+        grid-template-areas:
+        "header header"
+        "section1 section2"
+        "section3 section4"
+        "section5 section6"
+        "footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: lightblue;
+}
+
+main {
+    grid-area: main;
+    background-color: lightgreen;
+    padding: 5px;
+}
+
+.section1 {
+    grid-area: section1;
+    padding:5px;
+    background-color: blue;
+
+}
+
+.section2 {
+    grid-area: section2;
+    padding:5px;
+    background-color: orange;
+}
+
+.section3 {
+    grid-area: section3;
+    padding:5px;
+    background-color: blue;
+}
+
+.section4 {
+    grid-area: section4;
+    padding:5px;
+    background-color: orange;
+}
+
+.section5 {
+    grid-area: section5;
+    padding:5px;
+    background-color: blue;
+}
+
+.section6 {
+    grid-area: section6;
+    padding: 5px;
+    background-color: orange;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+img {
+    display: block;
+    margin: auto auto auto auto;
+    vertical-align: middle;
+}
+}

@@ -1,0 +1,143 @@
+/*CSS GRID TEMPLATE AREA EXPERIMENT*/
+
+body, html {
+    height: 100vh;
+
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 27% 27%  27% auto;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+        "header header header header header"
+        " . #img1 #img2 #img3 . "
+        " . #img4 #img5 #img6 . "
+        "footer footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: lightblue;
+}
+
+main {
+    grid-area: main;
+    background-color: lightgreen;
+    display: inline-flex;
+    padding: 5px;
+}
+
+.gallImgBox {
+    display: inline-flex;
+}
+
+#img1 {
+    grid-area: #img1;
+    padding:5px;
+}
+
+#img2 {
+    grid-area: #img2;
+    padding:5px;
+}
+
+#img3 {
+    grid-area: #img3;
+    padding:5px;
+}
+
+#img4 {
+    grid-area: #img4;
+    padding:5px;
+}
+
+#img5 {
+    grid-area: #img5;
+    padding:5px;
+}
+
+#img6 {
+    grid-area: #img6;
+    padding:5px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: gray;
+}
+
+.gallImgBox {
+    margin: 5px;
+}
+/* MOBILE VERSION */
+@media only screen and (min-width: 768px) {
+
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 25% 25% 25% 10%;
+        grid-template-areas: 
+            "header header"
+            "#img1 #img2"
+            "#img3 #img4"
+            "#img5 #img6"
+            "footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: lightblue;
+}
+
+main {
+    grid-area: main;
+    background-color: lightgreen;
+    display: inline-flex;
+    padding: 5px;
+}
+
+.gallImgBox {
+    display: inline-flex;
+}
+
+#img1 {
+    grid-area: #img1;
+    padding:5px;
+}
+
+#img2 {
+    grid-area: #img2;
+    padding:5px;
+}
+
+#img3 {
+    grid-area: #img3;
+    padding:5px;
+}
+
+#img4 {
+    grid-area: #img4;
+    padding:5px;
+}
+
+#img5 {
+    grid-area: #img5;
+    padding:5px;
+}
+
+#img6 {
+    grid-area: #img6;
+    padding:5px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: gray;
+}
+
+.gallImgBox {
+    margin: 5px;
+}

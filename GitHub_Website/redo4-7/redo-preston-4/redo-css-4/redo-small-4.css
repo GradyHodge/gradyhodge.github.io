@@ -7,8 +7,11 @@ body {
     margin: 15px;
 }
 
-header {
+header nav {
     background-color: #35a7ff;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
 }
 
 article {
@@ -31,8 +34,7 @@ SECTION IDs
 }
 
 #siteLogo .logo .pageTitle .motto {
-display: inline-block;
-vertical-align: middle;
+
 }
 
 #mainTitle {
@@ -44,7 +46,7 @@ background-color: lightblue;
 }
 
 #heroImage {
-  
+    
 }
 /*
 CLASS SELECTORS
@@ -79,11 +81,12 @@ padding: 20px;
 }
 
 .articleImage {
-align-content: 
+align-content: center;
 }
 
 .contactInfo {
 background-color: #1a5777;
+align-content: center;
 }
 
 .mapImage {
