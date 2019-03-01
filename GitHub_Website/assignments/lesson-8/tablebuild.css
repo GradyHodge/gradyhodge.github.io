@@ -1,0 +1,62 @@
+/*TABLE BUILD*/
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+caption{
+    margin: 30px;
+}
+
+table {
+    box-shadow: 15px 15px 20px #628ca6;
+    margin: 100px;
+}
+
+table, th, td {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    border: 2px solid #b3acac;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+}
+
+#sales tr:hover {
+    background-color: #0bc734;
+}
+
+th{
+    background-color: #628ca6;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+thead {
+    font-size: 1.5em;
+    color: white;
+}
+
+tfoot {
+    background-color: #628ca6;
+    font-size: .7em;
+}
+
+#tableTitle {
+    background-color: #628ca6;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#salesGoal {
+    background-color: #628ca6;
+    color: white;
+}
+
+#blackFriday {
+    font-style: italic;
+}

@@ -56,3 +56,7 @@ footer {
     font-size: smaller /* smaller */;
 }
 
+li {
+    text-align: left;
+}
+
