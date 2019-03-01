@@ -57,6 +57,7 @@ footer {
 }
 
 li {
-    text-align: left;
+    text-align: left; 
+    /*text alignment works on local view update, but not push to github?*/
 }
 
