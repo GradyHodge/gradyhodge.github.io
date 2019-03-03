@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Lato');
+
+/* 
+CREDIT TO CODE PEN BY ERIK TERWAN FOR  Hamburger Menu Experiment
+*/
+ 
+
+ body
+ {
+   margin: -10;
+   padding: 0;
+
+ }
+ 
+ a
+ {
+   text-decoration: none;
+   color: #232323;
+   
+   transition: color 0.3s ease;
+ }
+ 
+ a:hover
+ {
+   color: lightskyblue;
+ }
+ 
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   top: -50px;
+   left: 20px;
+   
+   z-index: 1;
+   
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0;
+   z-index: 2;
+   
+   -webkit-touch-callout: none;
+ }
+ 
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   /*hamburger color*/ background: #2d0cc4; 
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+			   background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+			   opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ #menu
+ {
+   position: absolute;
+   width: 300px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   
+   background: #ededed;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+
+ #menuToggle input:checked ~ ul {
+   transform: none;
+ }
+ 
+} /*end of media query for small screen hamburger menu */
+
+
+
+
+
+
+
+
+/*CodePen.io Header & Logo example (not working) */
+nav ul li {
+  float: left;
+  list-style-type: none;
+  font-size: 1.75em;
+  text-decoration: none;
+}
+
+nav ul li a {
+  display: block;
+  padding: .5rem 1rem;
+  background-color: #d3d318;
+}
+
+body {
+	background-color: rgba(17, 156, 221, 0.719);
+}
+
+header {
+	margin: 10px auto;
+	background-color: #115bca9d;
+	border: 1px solid #bbb;
+	box-shadow: 0 0 30px #777;
+	text-align: left;
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+
+p {
+    font-family: "Alegreya", Georgia, serif;
+  }
+
+h1 h2 h3 title nav {
+	font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+footer {
+  position: absolute;
+  bottom: 1;
+  background-color: hsl(202, 10%, 21%);
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 6px;
+
+}
+
+#logo {
+
+}
+
+#title {
+font-size: 100px;
+}
+
+#weatherSummary {
+	margin: 10px auto;
+	padding: 7px;
+	background-color: rgba(21, 204, 218, 0.438);
+	border: 2px solid #bbb;
+	box-shadow: 0 0 30px #777;
+	font-size: 2em;
+    text-align: left;
+	vertical-align: middle;
+	display: inline-block;
+   position: relative;
+   
+}
+
+#heroImage {
+
+}
+
+#articleImage {
+width: 100%;
+}
+
+#contactInformation {
+
+}
+
+.motto {
+  font-family: "Alegreya", Georgia, serif;
+}
+
+
+article {
+
+}
