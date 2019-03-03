@@ -1,0 +1,152 @@
+/*
+TABLET SCREEN SIZE
+DISPLAY A MAXIMUM OF 2 COLUMNS OF IMAGES
+CSS GRID for Gallery Page
+*/
+nav {
+    float: right;
+    list-style-type: none;
+    text-align: center;
+  
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 30px;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+nav li {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    text-align: middle:
+}
+
+nav a {
+    color: #740b54;
+    text-decoration: none;
+}
+
+body, html {
+    height: 100vh;
+    color: #1f1616;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 15% 8% 25% 25% 7%;
+    grid-template-areas:
+        "header header header"
+        "pageTitle pageTitle pageTitle"
+        "gallImg1 gallImg2 gallImg3"
+        "gallImg4 gallImg5 gallImg6"
+        "footer footer footer";
+/*vh =  viewport height, auto = take as much space as you need inside
+use 2 column layout for tablet view
+*/
+}
+
+header {
+    grid-area: header;
+    background-color: gray;
+    margin-bottom: -30px;
+    padding: 10px;
+    text-align: center;
+}
+
+header::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+main {
+    background-color: lightblue;
+}
+
+#pageTitle {
+    grid-area: pageTitle;
+    background-color: #44d337;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 30px;
+    fotexnt-size: 40px;
+}
+
+#gallImg1 {
+    grid-area: gallImg1;
+    background-color: #0099ff;
+    padding: 5px;
+    margin: 15px;
+}
+
+#gallImg2 {
+    grid-area: gallImg2;
+    background-color: yellowgreen;
+    padding: 5px;
+    margin: 15px;
+}
+
+#gallImg3 {
+    grid-area: gallImg3;
+    background-color: #0099ff;
+    padding: 5px;
+    margin: 15px;
+}
+
+#gallImg4 {
+    grid-area: gallImg4;
+    background-color: yellowgreen;
+    padding: 5px;
+    margin: 15px;
+}
+
+#gallImg5 {
+    grid-area: gallImg5;
+    background-color: #0099ff;
+    padding: 5px;
+    margin: 15px;
+}
+
+#gallImg6 {
+    grid-area: gallImg6;
+    background-color: yellowgreen;
+    padding: 5px;
+    margin: 15px;
+}
+
+img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.imgDesc {
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #312f2f;
+    color: gray;
+    font-size: 2em;
+    width: 100%;
+    padding: 2em;
+    margin-top: 200px;
+    margin-bottom: 300px;
+
+
+}
+
+.logo {
+    float: left;
+    margin-left: 10px;
+    padding: 10px;
+}
