@@ -8,11 +8,13 @@
         </title>
         <meta name="description" type="text/css" content="The Weather Site project basic build">
 
-        <!--<link rel="stylesheet" type="text/css" href="../styles/small-8.css"> added to top to get CSS file to work, the links below aren't working-->
+<!--    <link rel="stylesheet" type="text/css" href="../styles/small-8.css"> added to top to get CSS file to work, the links below aren't working
         
         <link rel="stylesheet" type="text/css" href="../normalize.css">
-        <link rel="stylesheet" type="text/css" media="screen and (max-width: 760px)" href="../styles/small-8.css">
-        <link rel="stylesheet" type="text/css" media="screen and (min-width: 760px)" href="../styles/large-8.css">
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 780px)" href="../styles/small-8.css">
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 781px)" href="../styles/large-8.css">
+-->
+        <link rel="stylesheet" type="text/css" href="../styles/small-8.css">
 
         <script type="text/javascript">
             var year = new Date().getFullYear;
@@ -21,104 +23,145 @@
         </script>
     </head>
     <body>
-            <header>
-                    <img src="../styles/images-8/logo-image.jpg" alt="The Preston Local Weather Site Logo. A mother holding an umbrella over her child.">
-                <section class="headings">
-                  <h1>Preston Local Weather Site | WK 7</h1>
-                  <h3 class="motto">When Local Weather is Critical to Your Plans</h3>
-                </section>
-                <!--    Made by Erik Terwan    -->
-            <!--   24th of November 2015   -->
-            <!--        MIT License        -->
-            <nav role="navigation">
-                <div id="menuToggle">
-            <!-- CodePen.io Hamburger menu ~ credit to Erik Terwan
+<!--TOP SECTION WITH LOGO AND MENU BAR-->
+    <header>
+        <section id="siteLogo">
+                <img class="logo" src="../styles/images-8/logo-image.jpg" alt="silhouette of a mother holding umbrella over her child">
+            <h1 class="pageTitle">
+                THE WEATHER SITE
+            </h1>
+            <div class="motto">
+            <h2>
+                When Local Weather is Critical to Your Plans
+            </h2>
+            </div>
+        </section>
+        <section class="navBox">
+            <nav>
+                <ul>
+                    <li><a href="#">Preston     </a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven  </a></li>
+                    <li><a href="#">Other City  </a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="#">Gallery     </a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+<!--LARGE MAIN TITLE-->
+        <section id="mainTitle">
+            <h1>
+                PRESTON
+            </h1>
+        </section>
+<!--WEATHER SUMMARY BOX & HERO IMAGE-->
+    <section id="weatherSummary">
+        <section class="widgetBox">
+            <p>
+                <h3>WEATHER SUMMARY</h3>
+                widget info line <br>
+                widget info line <br>
+                widget info line <br>
+                <h3>How Cold Does It Really Feel</h3>
+                <h5>Wind Chill Calculator</h5>
+                    Input Temperature in Fahrenheit: <br> <input type='text' id='temperature' size='5'><br>
+                    Input Wind Speed in MPH: <br> <input type='text' id='windSpeed' size='5'><br>
+                <br><button type='button' onclick='doInputOutput()'>Wind Chill</button>
+                <div id='chillDiv'></div>
+            </p>
+        </section>
+        <section class="heroBox">
+            <img id="heroImage" src="../styles/images-8/Hero-Unsplash-Lightning-Cloud.1.jpg" alt="giant multicolored thunderstorm clouds with a lightening bolt striking above a darkened city skyline">
+        </section>
+    </section>
+<!--ARTICLE-->
+    <section class="articleBox">
+        <h2>
+            ARTICLE TITLE
+        </h2>
+        <address>
+            by author
+        </address>
 
-            
-                  A fake / hidden checkbox is used as click reciever,
-                  so you can use the :checked selector on it.
-                  
-                  <input type="checkbox" />
-                  
-                  
-                  Some spans to act as a hamburger.
-                  
-                  They are acting like a real hamburger,
-                  not that McDonalds stuff.
-                  
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  
-                  
-                  Too bad the menu has to be inside of the button
-                  but hey, it's pure CSS magic.
-                  
-                  <ul id="menu">
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Info</li></a>
-                    <a href="#"><li>Contact</li></a>
-                    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-                  </ul>
-                </div>
-              </nav>
-            -->
-                <nav role="navigation">
-                    <div id="menuToggle">
-                        <input type="checkbox" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      <ul id="menu">
-                         <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li><!--from codepen-->
-                         <li><a href="#">Preston</a></li>
-                         <li><a href="#">Soda Springs</a></li>
-                         <li><a href="#">Fish Haven</a></li>
-                         <li><a href="#">Other City</a></li>
-                         <li><a href="#">Storm Center</a></li>
-                         <li><a href="../z-experiments/grid-2/grid-2.html">Gallery</a></li>
-                      </ul>
-                    </div>
-                </nav>
-            </header>
-            
-            <h1 id="title">Preston</h1>
-            
-            <!--Weather Summary Section-->
-                    <section id="weatherSummary">
-                            <div >
-                                 WIDGET - WEATHER SUMMARY <br>
-                                 information bar <br>
-                                 information bar <br>
-                                 information bar <br>
-                                 information bar <br>
-                                 information bar <br>
-                            </div>
-                            <img #heroImage src="../styles/images-8/Hero-Unsplash-Lightning-Cloud.jpg" alt="brilliant thunderstorm purple and yellow lighting brightening the clouds while striking the city skyline">
-                    </section>
-            <!--Article Section-->
-                    <article>
-                        <h3>Article Title</h3>
-                            <address>by: author</address>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nesciunt id commodi eius. Eaque quos excepturi porro praesentium dignissimos, maiores molestiae totam nisi voluptatem harum aliquam quibusdam id ipsam. Fugit.
-                                Reiciendis illum nobis, pariatur repellat voluptate consectetur explicabo delectus vel ipsam laboriosam nihil ratione necessitatibus quia fuga iure repellendus expedita ipsa labore eos impedit? Delectus iste vitae enim eos at?
-                                Culpa tempora impedit atque sint molestiae veritatis eius qui quod reiciendis cupiditate doloremque possimus sit, ducimus nesciunt, enim iste. Optio expedita autem voluptate at dolores delectus atque dignissimos assumenda labore.
-                               
-                            </p>
-                            <img #articleImage src="../styles/images-8/Snowy-Umbrella-unsplash.jpg" alt="white snow stuck to a woman's black umbrella">
-                    </article>
-            <!--Contact Information-->
-                    <section class="contactInformation">
-                        <p>Contact Information</p>
-                        <div>MAP</div>
-                    </section>
-            <!--Footer Section-->
-                    <footer>
-                        <h3>Footer Bar <br></h3>
-                        &copy;  Weather Site Project WK 6 GWH 
-                    </footer>
-                </body>
-            </html>
-            
+        <article>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam architecto eius sed laudantium perferendis iste voluptate debitis deserunt alias cum eaque excepturi placeat reprehenderit quis dolorum expedita, blanditiis consectetur. Modi.
+                Commodi facilis temporibus, nam autem, illo repellendus laudantium soluta quod, ipsum facere possimus veniam doloribus et modi velit dolor incidunt amet odio saepe sit. Iusto sunt nostrum earum ratione perspiciatis?
+                Nisi, doloribus placeat illum, vel voluptatum dolorem officia maxime suscipit quo recusandae non possimus adipisci rem tempore odio repellendus laboriosam obcaecati nesciunt mollitia ipsam nam? Nemo explicabo vel amet commodi.
+            </p>
+        </article>
+        <section class="articleImage">
+            <img src="../styles/images-8/Snowy-Umbrella-unsplash.jpg" width="200px" height="200px" alt="white snow sticking to a black umbrella on a windy day">
+        </section>
+    </section>
+<!--CONTACT FORM -->
+    <form action="/signup" method="POST"> <!--but not really post, this is just practice-->
+        <h1>
+           REPORT A STORMY WEATHER SIGHTING
+        </h1>
+        <section id="stormForm">
+            <h2>
+                Contact Information
+            </h2>
+                <p>  
+                    <label for="fullName">Full Name</label>
+                    <br>
+                    <input id="fullName" type="text" pattern="(a-z) {5,}" title="must contain at least five letters" required><!--TODO: only accept alpha char, min five letters, use reg expr-->
+                    <br>
+                </p>
+                <pr>
+                    <label for="email">Email</label> <!--TODO: add placeholder example-->
+                    <br> 
+                    <input id="email" type="email"  placeholder="name@gmail.com" required>
+                    <br>
+                </pr>
+                <pr>
+                    <label for="phone">Phone Number</label>
+                    <br>
+                    <input id="phone" type="tel" placeholder="000-000-0000" required>
+                    <br>
+                </pr>
+                <pr>
+                    <label for="zip">Zip Code</label>
+                    <br>
+                    <input id="zip" type="text" pattern=" [0-9]*" required>
+                    <br>
+                </pr>
+            <h2>
+                Describe the Weather
+            </h2>
+                <p>
+                    <label for="stormDate">Storm Date</label>
+                    <br>
+                    <input id="stormDate" type="date">
+                </p>
+                <p>
+                    <label for="stormType">Storm Type</label>
+                    <br>
+                    <select id="stormType">
+                        <option>Flash Flood</option>
+                        <option>Hail</option>
+                        <option>Hurricane</option>
+                        <option>Thunderstorm</option>
+                        <option>Tornado</option>
+                    </select>
+                    <br>
+
+                </p>
+        </section>
+    </form>
+<!--CONTACT INFORMATION-->
+    <section class="ContactInfo" >
+        <map>
+            <h2>Contact Information</h2>
+            <img src="../styles/images-8/Map-unsplash.jpg" width="200px" height="200px" alt="ironic image of people holding up a phone displaying a map of the Preston area" class="mapImage">
+        </map>
+    </section>
+<!--FOOTER-->
+    <footer>
+        FOOTER BAR
+        <p>&copy; GWH CIT 2019</p>
+    </footer>
+</body>
+</html>

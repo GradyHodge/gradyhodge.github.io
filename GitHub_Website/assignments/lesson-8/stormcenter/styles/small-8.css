@@ -7,8 +7,8 @@ CREDIT TO CODE PEN BY ERIK TERWAN FOR  Hamburger Menu Experiment
 
  body
  {
-   margin: -10;
-   padding: 0;
+   margin: 10px;
+   padding: 1px;
 
  }
  
@@ -142,95 +142,135 @@ CREDIT TO CODE PEN BY ERIK TERWAN FOR  Hamburger Menu Experiment
 
 
 /*CodePen.io Header & Logo example (not working) */
-nav ul li {
-  float: left;
-  list-style-type: none;
-  font-size: 1.75em;
-  text-decoration: none;
-}
-
-nav ul li a {
-  display: block;
-  padding: .5rem 1rem;
-  background-color: #d3d318;
-}
-
+/*
+REDO WK 7 CSS FILE
+*/
 body {
-	background-color: rgba(17, 156, 221, 0.719);
+  background-color:#84cdf5;
+  max-width: 95%;
+  margin: 15px;
 }
 
 header {
-	margin: 10px auto;
-	background-color: #115bca9d;
-	border: 1px solid #bbb;
-	box-shadow: 0 0 30px #777;
-	text-align: left;
+    background-color: #35a7ff;
+    display: flex;
+    flex-direction: column;
 }
 
-header img, .headings {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 10px;
+nav {
+    background-color: ##075781;
+    text-align: center;
 }
 
-p {
-    font-family: "Alegreya", Georgia, serif;
-  }
+.widgetBox button {
+  margin: 5px;
+}
 
-h1 h2 h3 title nav {
-	font-family: "Lato", Arial, Helvetica, sans-serif;
+article {
+
 }
 
 footer {
-  position: absolute;
-  bottom: 1;
-  background-color: hsl(202, 10%, 21%);
-  width: 100%;
+  background-color: #274032;
   color: white;
+  padding: 50px;
   text-align: center;
-  padding: 6px;
-
 }
 
-#logo {
-
+/*
+SECTION IDs
+*/
+#siteLogo{
+  margin: 10px auto;
+  text-align: center;
 }
 
-#title {
-font-size: 100px;
+#siteLogo .logo .pageTitle .motto {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#mainTitle {
+  font-size: 3em;
+  display: inline-block;
 }
 
 #weatherSummary {
-	margin: 10px auto;
-	padding: 7px;
-	background-color: rgba(21, 204, 218, 0.438);
-	border: 2px solid #bbb;
-	box-shadow: 0 0 30px #777;
-	font-size: 2em;
-    text-align: left;
-	vertical-align: middle;
-	display: inline-block;
-   position: relative;
-   
+  background-color: lightblue;
 }
 
 #heroImage {
 
 }
-
-#articleImage {
-width: 100%;
-}
-
-#contactInformation {
-
-}
+/*
+CLASS SELECTORS
+*/
 
 .motto {
-  font-family: "Alegreya", Georgia, serif;
-}
-
-
-article {
 
 }
+
+.navBox {
+  background-color: #075781;
+  display: flex;
+  flex-direction: row;
+}
+
+.widgetBox {
+  background-color: #ffe74c;
+  border: 2px white;
+  max-width: 300px;
+  padding: 5px;
+  position: relative;
+  top:50px;
+  left: 45px;
+  z-index: 3;
+}
+
+.heroBox {
+  position: relative;
+  top: -165px;
+  left: 10px;
+  z-index: 2;
+  max-width: 90%;
+}
+
+.articleBox {
+  background-color: #35a7ff;
+  max-width: 90%;
+  padding: 20px;
+  align-content: center;
+}
+
+.articleImage {
+  align-content: center;
+}
+
+#stormForm {
+  background-color: #1a5777;
+  align-content: center;
+}
+
+.mapImage {
+
+}
+
+form {
+    border: 3px solid yellow;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    padding: 0 10px 10px 10px;
+    margin: 50px 0;
+  }
+
+label, input, select, option {
+    font-size: 1.5em;
+}
+
+#mainTitle {
+    font-size: 3em;
+}
+
+h2 {
+    text-align: 50%;
+}
+
