@@ -20,6 +20,11 @@
             var year = new Date().getFullYear;
             var date = '&copy; Weather Site Project ${year}. All Rights Reserved.';
             document.getElementsByTagName('footer')[0].innerHTML = year;
+
+            function adjustRating(rating) {
+                document.getElementById("ratingvalue").innerHTML = rating;
+            }
+
         </script>
     </head>
     <body>
@@ -96,18 +101,18 @@
         </section>
     </section>
 <!--CONTACT FORM -->
-    <form action="/signup" method="POST"> <!--but not really post, this is just practice-->
+    <form id="stormForm" action="/signup" method="POST" name="storm_form"> <!--but not really post, this is just practice-->
         <h1>
            REPORT A STORMY WEATHER SIGHTING
         </h1>
-        <section id="stormForm">
+        <section>
             <h2>
                 Contact Information
             </h2>
                 <p>  
                     <label for="fullName">Full Name</label>
                     <br>
-                    <input id="fullName" type="text" pattern="(a-z) {5,}" title="must contain at least five letters" required><!--TODO: only accept alpha char, min five letters, use reg expr-->
+                    <input id="fullName" type="text" pattern="(a-z) {5, }" title="must contain at least five letters" required><!--TODO: only accept alpha char, min five letters, use reg expr-->
                     <br>
                 </p>
                 <pr>
@@ -147,8 +152,46 @@
                         <option>Tornado</option>
                     </select>
                     <br>
-
                 </p>
+                <p>
+                    <label for="stormSeverity">Storm Severity</label>
+                    <br>
+                    <input type="range" id="stormSeverity" value="10" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">10</span><br>
+                </p>
+                <p>
+                    <label for="stormRegion">Storm Region</label>
+                    <br>
+                    <select id="stormRegion">
+                        <option value=" " disabled selected>Select Region...</option>
+                        <option>Preston</option>
+                        <option>Soda Springs</option>
+                        <option>Fish Haven</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="dangerLevel">User In-Danger Level</label><br>
+                        <label>
+                            <input type="radio" name="dangerLevel" value="Yes">
+                            Yes
+                        </label><br>
+                        <label>
+                            <input type="radio" name="dangerLevel" value="Maybe">
+                            Maybe
+                        </label><br>
+                        <label>
+                            <input type="radio" name="dangerLevel" value="No">
+                            No
+                        </label><br>
+                </p>
+                <p>
+                    <label for="AddInfo"><strong>Additional Information</strong></label><br>
+                    <textarea rows="8" cols="75"></textarea>
+                </p>
+                    <br>
+                    <br>
+                    <!--<input type="submit" onsubmit="thankYouMsg()">-->
+                    <input type="hidden" name="redirect" value="https://gradyhodge.github.io/GitHub_Website/Assignment-Portal-CIT-230/thanks.html">
         </section>
     </form>
 <!--CONTACT INFORMATION-->

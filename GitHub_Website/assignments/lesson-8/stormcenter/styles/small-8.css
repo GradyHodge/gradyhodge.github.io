@@ -247,7 +247,7 @@ CLASS SELECTORS
 }
 
 #stormForm {
-  background-color: #1a5777;
+  background-color: #55bef6;
   align-content: center;
 }
 
@@ -256,21 +256,36 @@ CLASS SELECTORS
 }
 
 form {
-    border: 3px solid yellow;
-    font-family: "Lato", Arial, Helvetica, sans-serif;
-    padding: 0 10px 10px 10px;
-    margin: 50px 0;
-  }
+  border: 3px solid yellow;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  padding: 0 10px 10px 10px;
+  margin: 50px 0;
+  max-width: 90%;
+}
 
 label, input, select, option {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 #mainTitle {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 h2 {
-    text-align: 50%;
+  text-align: 50%;
 }
 
+input:invalid {
+  background-color: rgba(255, 192, 203, 0.685);
+  color: #fff;
+  box-shadow: 6px 6px 10px pink;
+}
+input:valid {
+  background-color: lightgreen;
+  color: #000;
+  box-shadow: 2px 2px 5px lightgreen;
+}
+
+select:invalid{
+  color:gray;
+}
