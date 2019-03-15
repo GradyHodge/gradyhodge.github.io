@@ -17,16 +17,17 @@ nav {
 }
 
 body { 
-    background-image: ../patrick-hendry-437543-unsplash.jpg;
-    font-size: 15px; 
+    background-image: url("patrick-hendry-437543-unsplash.jpg");
+    font-size: 20px; 
     line-height: 35px;
+    font-weight: bold;
     font-family: Ubuntu, sans-serif /* Ubuntu, sans-serif */;
     color: blue /* #xxxxxx */;
 }
 
 h1 {
     font-size: 2.5rem /* x.xrem  (rem is a unit of measure) */;
-    color: darkblue/* #xxxxxx */;
+    color: rgb(209, 221, 231)/* #xxxxxx */;
 }
 
 h2 {
@@ -43,8 +44,16 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color:  #808080/* */;
+    background-color:  #2534c05b;
     color: whitesmoke;
+}
+
+a:link {
+    color: #2428ff
+}
+
+a:visited {
+    color: #9444fd
 }
 
 header img {
