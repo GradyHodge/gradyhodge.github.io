@@ -17,6 +17,7 @@ nav {
 }
 
 body { 
+    background-image: ../patrick-hendry-437543-unsplash.jpg;
     font-size: 15px; 
     line-height: 35px;
     font-family: Ubuntu, sans-serif /* Ubuntu, sans-serif */;
