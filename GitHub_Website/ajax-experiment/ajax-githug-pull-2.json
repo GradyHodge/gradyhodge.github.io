@@ -1,0 +1,23 @@
+[
+	{"name": "Shaddow",
+	 "species": "cat",
+	 "foods": {
+		"likes": ["tuna", "catnip"],
+		"dislikes": ["ham", "zucchini"]
+	  }
+	},
+	{"name": "Farrow",
+	 "species": "dog",
+	 "foods": {
+		"likes": ["bones", "carrots"],
+		"dislikes": ["tuna", "zucchini"]
+	  }
+	},
+	{"name": "Murdock",
+	 "species": "cat",
+	 "foods": {
+		"likes": ["mice", "catnip"],
+		"dislikes": ["cookies", "zucchini"]
+	  }
+	}
+	]

@@ -1,0 +1,23 @@
+[
+	{"name": "Neutragena",
+	 "species": "cat",
+	 "foods": {
+		"likes": ["tuna", "catnip"],
+		"dislikes": ["ham", "zucchini"]
+	  }
+	},
+	{"name": "Mog",
+	 "species": "dog",
+	 "foods": {
+		"likes": ["bones", "carrots"],
+		"dislikes": ["tuna", "zucchini"]
+	  }
+	},
+	{"name": "Spinster",
+	 "species": "cat",
+	 "foods": {
+		"likes": ["mice", "catnip"],
+		"dislikes": ["cookies", "zucchini"]
+	  }
+	}
+	]

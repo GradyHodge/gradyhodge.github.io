@@ -1,4 +1,5 @@
 //https://wwww.learnwebcode.github.io/json-example/animals-1.json  this url is where we want to "get" the json data with ajax
+var pageCounter = 1;
 var animalContainer = document.getElementById("animal-info");
 var btn = document.getElementById("btn");
 
@@ -10,6 +11,9 @@ btn.addEventListener("click", function() {
 		renderHTML(ourData);
 	};
 	ourRequest.send();
+	pageCounter++;
+	if (pageCounter > 3)
+	btn.classList.add("hide-me");
 });
 
 function renderHTML(data) {
