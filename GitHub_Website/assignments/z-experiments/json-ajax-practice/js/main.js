@@ -4,7 +4,7 @@ var btn = document.getElementById("btn");
 
 btn.addEventListener("click", function() {
 	var ourRequest = new XMLHttpRequest();
-	ourRequest.open('GET', 'https://www.learnwebcode.github.io/json-example/animals-1.json');
+	ourRequest.open('GET', 'https://github.com/GradyHodge/gradyhodge.github.io/blob/master/GitHub_Website/ajax-experiment/ajax-github-pull.html');
 	ourRequest.onload = function() {
 		var ourData = JSON.parse(ourRequest.responseText);
 		renderHTML(ourData);
