@@ -5,7 +5,7 @@ var btn = document.getElementById("btn");
 
 btn.addEventListener("click", function() {
 	var ourRequest = new XMLHttpRequest();
-	ourRequest.open('GET', 'https://github.com/GradyHodge/gradyhodge.github.io/blob/master/GitHub_Website/ajax-experiment/ajax-github-pull.json');
+	ourRequest.open('GET', 'https://gradyhodge.github.io/GitHub_Website/ajax-experiment/ajax-github-pull-1.json');
 	ourRequest.onload = function() {
 		var ourData = JSON.parse(ourRequest.responseText);
 		renderHTML(ourData);
