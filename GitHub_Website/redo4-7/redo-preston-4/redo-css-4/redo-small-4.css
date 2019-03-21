@@ -1,28 +1,97 @@
 /*
 REDO WK 4 CSS FILE
 */
+@import url('https://fonts.googleapis.com/css?family=Lato|Bitter');
+
+h1, h2, h3, a {
+    font-family: 'Bitter', serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
 body {
     background-color:#84cdf5;
     max-width: 95%;
     margin: 15px;
 }
 
-header nav {
-    background-color: #35a7ff;
+header {
+    margin: 10px auto;
+    background-color: white;
+    border: 1px solid rgb(107, 138, 189);
+    box-shadow: 0 0 30px #11657a;
+    text-align: center;
+}
+
+.pageTitle {
+    font-size: 50px;
+}
+
+.logo, .pageTitle {
     display: inline-block;
-    justify-content: center;
-    align-items: center;
+    vertical-align: middle;
+    margin: 10px;
+
+}
+/* Caler Edwards YouTube example of responsive hamburger menu*/
+.nav {
+    font-family: "helvetica neue", sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-bottom: 1px solid #1b9adf;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+span {
+    color: rgb(43, 146, 43);
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    
+}
+
+#toggle {
+    display: none;
+}
+
+/* ABOVE - Caler Edwards YouTube Responsive Menu */
+
+section {
+    max-width: 95%;
+    margin: 15px 0 15px 0;
 }
 
 article {
-
+    margin-top: 15px;
 }
 
 footer {
- background-color: #274032;
- color: white;
- padding: 50px;
- text-align: center;
+    background-color: #274032;
+    color: white;
+    padding: 10px 0px 10px;
+    text-align: center;
+    max-width: 95%;
+    margin-top: 15px;
  }
 
 /*
@@ -85,12 +154,33 @@ align-content: center;
 }
 
 .contactInfo {
-background-color: #1a5777;
+background-color: #093852;
 align-content: center;
+max-width: 95%;
 }
 
-.mapImage {
+/* BELOW - Caler Edwards Responsive Menu Media Query*/
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+        width: 26px;
+        float: right;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        clear: right;
+        display: block;
+        border-bottom: 1 px solid #093852;
+        margin: 0;
+    }
 
+    #toggle:checked + .menu {
+        display: block;
+    }
 }
-
-
+/* ABOVE - Caler Edwards Responsive Menu Media Query*/
