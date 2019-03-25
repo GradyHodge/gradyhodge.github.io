@@ -1,0 +1,132 @@
+<!--REDO of Week 4-7 | This is Assignment 4-->
+
+<!--mobile first design, layout optimied for 375 width screen (Galaxy Note 9)-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width, initial scale=1, maximum-scale=1">
+    <meta name="description" type="text/css" content="REDO of Weather site project from wk 4-7">
+    <title>
+        REDO WK 5 CIT 230
+    </title>
+    <link rel="stylesheet" type="text/css" href="../redo-css-5/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../redo-css-5/redo-small-5.css">
+    <link rel="stylesheet" type="text/css" href="../redo-css-5/redo-large-5.css">
+</head>
+<body>
+<!--TOP SECTION WITH LOGO AND MENU BAR-->
+    <header>
+        <section id="siteLogo">
+                <img class="logo" src="../redo-images-5/logo-image.jpg" alt="silhouette of a mother holding umbrella over her child">
+            <h1 class="pageTitle">
+                THE WEATHER SITE
+            </h1>
+            <div class="motto">
+            <h2>
+                When Local Weather is Critical to Your Plans
+            </h2>
+            </div>
+        </section>
+<!--RESPONSIVE MENU ADDED FROM YOUTUBE, CALER EDWARDS "RESPONSIVE MENU WITH MEDIA QUERIES (CHECKBOX TRICK) - USING ONLY CSS3-->
+        <div class="nav">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <nav class="menu">
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+<!--ABOVE - RESPONSIVE MENU-->
+
+    </header>
+<!--LARGE MAIN TITLE-->
+        <section id="mainTitle">
+            <h1>
+                PRESTON
+            </h1>
+        </section>
+<!--WEATHER SUMMARY BOX & HERO IMAGE-->
+    <section id="weatherSummary">
+        <section class="widgetBox">
+            <p>
+                <h3><span>WEATHER SUMMARY</span></h3>
+                widget info line <br>
+                widget info line <br>
+                widget info line <br>
+                widget info line <br>
+                widget info line <br>
+                widget info line <br>
+            </p>
+        </section>
+        <section class="heroBox">
+            <img id="heroImage" src="../redo-images-5/Hero-Unsplash-Lightning-Cloud.jpg" alt="giant multicolored thunderstorm clouds with a lightening bolt striking above a darkened city skyline">
+        </section>
+<!--5 Day Forecast Table only shows on large screens-->
+        <section class="forecast">
+            <table id="fiveDayTable">
+                <caption>
+                    5 Day Forecast
+                </caption>
+                <thead>
+                    <tr id="columnHeaders">
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&#8457;</td>
+                        <td>89&#8457;</td>
+                        <td>89&#8457;</td>
+                        <td>89&#8457;</td>
+                        <td>89&#8457;</td>
+                    <tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+<!--ARTICLE-->
+    <section class="articleBox">
+        <h2>
+            ARTICLE TITLE
+        </h2>
+        <address>
+            by author
+        </address>
+
+        <article>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam architecto eius sed laudantium perferendis iste voluptate debitis deserunt alias cum eaque excepturi placeat reprehenderit quis dolorum expedita, blanditiis consectetur. Modi.
+                Commodi facilis temporibus, nam autem, illo repellendus laudantium soluta quod, ipsum facere possimus veniam doloribus et modi velit dolor incidunt amet odio saepe sit. Iusto sunt nostrum earum ratione perspiciatis?
+                Nisi, doloribus placeat illum, vel voluptatum dolorem officia maxime suscipit quo recusandae non possimus adipisci rem tempore odio repellendus laboriosam obcaecati nesciunt mollitia ipsam nam? Nemo explicabo vel amet commodi.
+            </p>
+        </article>
+        <section class="articleImage">
+            <img src="../redo-images-5/Snowy-Umbrella-unsplash.jpg" alt="white snow sticking to a black umbrella on a windy day">
+        </section>
+    </section>
+<!--CONTACT INFORMATION-->
+    <section class="contactInfo">
+        <map>
+            <h2>Contact Information</h2>
+            <img src="../redo-images-5/Map-unsplash.jpg" alt="ironic image of people holding up a phone displaying a map of the Preston area" class="mapImage">
+        </map>
+    </section>
+<!--FOOTER-->
+    <footer>
+        FOOTER BAR
+        <p>&copy; GWH CIT 2019 | Week 5 | Normalize CSS & Customized Nav Bars Using Media Queries</p>
+    </footer>
+</body>
+</html>
