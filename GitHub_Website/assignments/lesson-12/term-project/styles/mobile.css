@@ -1,0 +1,30 @@
+/*
+CSS - MOBILE FIRST DESIGN
+*/
+
+body {
+	margin: 10px;
+}
+
+.siteLogo {
+	background-color: #cbcbf5;
+}
+
+.overview {
+	background-color: #a2e6e9;
+}
+
+.cta {
+	background-color: #fc6b6b;
+}
+
+.packages {
+	background-color: #a1d4a1;
+}
+
+.templeInfo {
+	background-color: rgb(231, 231, 157);
+}
+footer {
+	background-color: #5e5b5b;
+}
