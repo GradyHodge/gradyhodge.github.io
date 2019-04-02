@@ -1,0 +1,6 @@
+.boxOne {
+	background-color: #bb1515;
+	box-shadow: 15px 15px 20px blue;
+	min-height: 200px;
+	text-align: center;
+}

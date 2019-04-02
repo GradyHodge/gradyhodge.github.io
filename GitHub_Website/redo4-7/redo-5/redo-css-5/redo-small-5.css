@@ -20,15 +20,12 @@ body {
 
 header {
     float: left;
-    margin: 10px auto;
+    margin: 10px;
     background-color: white;
     border: 1px solid rgb(107, 138, 189);
     box-shadow: 0 0 30px #11657a;
-    text-align: center;
-}
-
-img {
-    margin: auto;
+    
+    width: 100%;
 }
 
 .logo {
@@ -42,7 +39,8 @@ img {
 }
 
 .motto {
-    font-size: 15px;
+    font-size: 10px;
+    text-align: center;
 }
 
 
@@ -90,8 +88,24 @@ label {
 }
 /* ABOVE - Caler Edwards YouTube Responsive Menu */
 
+/*BELOW - WEATHER SUMMARY*/
+tbody td:nth-child(odd) {
+    background-color: #1fb986;
+    color: white;
+}
+
+tbody td:nth-child(even) {
+    background-color: #19cf47;
+    color: yellow;
+}
+
+table {
+    z-index: 3;
+}
+/*ABOVE - WEATHER SUMMARY*/
+
 section {
-    max-width: 95%;
+    max-width: 100%;
     margin: 15px 0 15px 0;
 }
 
@@ -117,7 +131,8 @@ SECTION IDs
 }
 
 #mainTitle {
-font-size: 3em;
+    font-size: 3em;
+   text-align: center;
 }
 
 #weatherSummary {
@@ -125,29 +140,19 @@ background-color: lightblue;
 }
 
 #heroImage {
-    
+    z-index: -1;
 }
 /*
 CLASS SELECTORS
 */
 
-.widgetBox {
-background-color: #ffe74c;
-border: 2px white;
-max-width: 400px;
-max-height: 400px;
-padding: 5px;
-position: relative;
-top:60px;
-left: 45px;
-z-index: 3;
-}
+
 
 .heroBox {
 position: relative;
 top: -185px;
 left: 10px;
-z-index: 2;
+z-index: -2;
 max-width: 90%;
 }
 
@@ -155,6 +160,7 @@ max-width: 90%;
 background-color: #35a7ff;
 width: 90%;
 padding: 20px;
+text-align: center;
 }
 
 .articleImage {
@@ -168,7 +174,7 @@ max-width: 95%;
 }
 
 /* BELOW - Caler Edwards Responsive Menu Media Query*/
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 700px) {
     label {
         display: block;
         cursor: pointer;

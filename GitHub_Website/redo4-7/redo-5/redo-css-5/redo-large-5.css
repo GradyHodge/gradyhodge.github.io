@@ -1,60 +1,56 @@
 /*
 WK 5 redo Large CSS
 */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
 body {
-	background-color: red;
-}
-
-img {
-	margin: auto;
+	background-color:#0bb1c7;
 }
 
 #logo {
+	display: block;
+	margin: auto;
 	width: 20px;
 	height: 20px;
 }
 
+#heroImage {
+	display: block;
+	margin-top: 150px;
+	max-width: 100%;
+	max-height: 100%;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 700px) {
-
-body {
-	background-color: orange;
-}
 }
 
 /*
 HORIZONTAL NAV BAR FOR LARGE SCREENS
 */
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 700px) {
 	.logo {
 		width: 100px;
 		height: 100px;
 		margin: 15px;
 	}
-	
-	.container {
-		width: 80%;
-		margin: 0 auto;
-	}
-	
+
 	header {
+		display: block;
+		margin: auto;
 		background-color: #55d6aa;
+		padding: 15px;
 	}
-	
+
 	header::after {
 		content: "";
 		display: table;
 		clear: both;
 	}
-	
+
 	#siteLogo {
 		float: left;
 		margin: 10px 0;
 	}
-	
+
 	nav {
 		float: right;
 		background-color: skyblue;
@@ -63,7 +59,8 @@ HORIZONTAL NAV BAR FOR LARGE SCREENS
 		color: #6b5959;
 		font-size: 20px;
 		text-decoration: none;
-		
+		padding: 5px;
+
 	}
 	
 	ul {
@@ -75,7 +72,7 @@ HORIZONTAL NAV BAR FOR LARGE SCREENS
 	li {
 		display: inline-block;
 		margin-left: 10px;
-		padding-top: 25px;
+		padding-top: 10px;
 	
 		position: relative;	
 	}
@@ -83,6 +80,7 @@ HORIZONTAL NAV BAR FOR LARGE SCREENS
 	li:hover {
 		color: #585151;
 		text-transform: uppercase;
+		transition: all ease-in-out 1000ms;
 	}
 	
 	li::before {
@@ -101,8 +99,8 @@ HORIZONTAL NAV BAR FOR LARGE SCREENS
 	
 	nav li:hover::before {
 		width: 100%;
-		
-	}	
+
+	}
 
 /*TABLE - 5 Day Forecast styling*/
 
@@ -145,5 +143,4 @@ HORIZONTAL NAV BAR FOR LARGE SCREENS
 	}
 
 }
-
-} /*ABOVE- Large Screen Media Rules for nav bar and 5 day for*/
+ /*ABOVE- Large Screen Media Rules for nav bar and 5 day for*/
