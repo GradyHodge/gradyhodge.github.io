@@ -90,9 +90,8 @@ body {
 	}
 
 	.navbarLinks.active {
-
+		display: flex;
 	}
-
 }
 
 
