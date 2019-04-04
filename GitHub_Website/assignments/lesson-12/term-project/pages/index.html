@@ -32,7 +32,7 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="../styles/mobile.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="../styles/tablet.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="../styles/large.css">
-	<script src="main.js"></script>
+	<script src="../scripts/main.js"></script>
 </head>
 <body>
 <!--MOBILE FIRST DESIGN-->
@@ -46,14 +46,22 @@
 		</div>
 	</section>
 <!--2. HAMBURGER MENU-->
-	<nav class="hamburger">
-		<ul>
-			<li><a href=""></a>Temple Schedule</li>
-			<li><a href="#"></a>Reservations</li>
-			<li><a href="#"></a>Services</li>
-			<li><a href="#"></a>Contact Us</li>
-			<button type="btn">Book Now</button>
-		</ul>
+	<nav class="navbar">
+		<div class="siteTitle">Brand Name</div>
+			<a href="#" class="toggleButton">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<div class="navbarLinks">
+				<ul>
+					<li><a href="pages/index.html">Home</a></li>
+					<li><a href="pages/temples-main.html">Temple</a></li>
+					<li><a href="pages/reservations.html">Reservations</a></li>
+					<li><a href="pages/services.html">Services</a></li>
+					<li><a href="pages/contact-us.html">Contact Us</a></li>
+				</ul>
+		</div>
 	</nav>
 </header>
 <!--2. TABLET/LARGE MENU TODO: ???media query???-->
