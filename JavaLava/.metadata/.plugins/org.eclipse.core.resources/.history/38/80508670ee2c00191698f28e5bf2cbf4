@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class A5dot3 {
+/*
+ * PSEUDO-CODE
+ *   INPUT: nothing
+ * PROCESS: use an appropriate loop to output a table of conversions for every odd number of kilogram into pounds          
+ *  OUTPUT: output the table and stop at 199
+*/  
+	public static void main(String[] args) {	
+// INPUT no input so no need for scanner.in, establish variable with value
+		double PoundsToKilos = 2.2;
+	
+		
+	
+// PROCESS
+		for (int i = 1; i <=200; i+= 2)
+	}
+	
+/*JAVASCRIPT FOR LOOP
+ *var i;
+ *for (i = 0; i < cars.length; i++) { 
+ *text += cars[i] + "<br>";
+ *
+ *JAVA FOR LOOP
+ *class ForLoopExample2 {
+    public static void main(String args[]){
+         for(int i=1; i>=1; i++){
+              System.out.println("The value of i is: "+i);
+ */
+		
+// OUTPUT
+	System.out.println("| " + i + " | " + (i * 2.2) + " |");
+/*
+ * A simple way to provide data for the JTable class is to use two arrays. The first holds the column names in a String array:
+
+String[] columnNames = {"First Column Name", "Second Column Name"};
+
+also see StackOverflow conversation about breaking up these for loops into individual modules to keep things simple
+https://stackoverflow.com/questions/35780278/making-a-table-in-java-using-loops
+ */
+			
+//PSEUDO-CODE
+//   INPUT: user continually guesses numbers till correctly identifies random number
+/* PROCESS: program first generates random number
+ *          program receives answer and gives clue as to whether guess is too high or too low
+ */
+//  OUTPUT: program gives clues and confirms correct guess
+		
+//INPUT PREP & GENERATE RANDOM NUMBER
+		
+	

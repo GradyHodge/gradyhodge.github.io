@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class A3dot11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//PSEUDO-CODE
+		//   INPUT: day, month, year
+		// PROCESS: how many days in each month including leap year for Feb
+		//  OUTPUT: the number of days in any month
+		
+	//   INPUT: variables month, year, daysOfMonth
+		//declare variables and types of variable = whole number = integers
+		
+	int days, month, year;
+	Scanner in = new Scanner(System.in);
+	
+	System.out.println("Enter month: ");
+		month = input.nextInt();
+	System.out.println("Enter year: ");
+		year = input.nextInt();
+		
+	}
+
+}
+
+
+/*
+//if year is divisible by 4, it is a leap year
+		
+		if((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))
+			System.out.println("Year " + year + " is a leap year");
+		else
+			System.out.println("Year " + year + " is not a leap year");
+	}
+
+*/

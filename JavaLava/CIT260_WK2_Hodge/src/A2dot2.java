@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class A2dot2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		import java.util.*;
+		//import java.util.Scanner*;
+			 
+			 
+			 class VolOfCyl {
+				 
+			public static void main(String[] args) {
+			
+			int radius, volume, height; 
+			Scanner in =  new Scanner(System.in );
+			
+			System.out.println("enter the radius of the cylinder: ");
+			radius = in.nextInt ();
+			System.out.println("enter the height of the cylinder: ");
+			height = in.nextInt();
+			
+			volume = (int)(Math.PI * radius * radius * height);
+			
+			System.out.println("The volume of the cylinder is: " + volume);
+			
+			/* float   temp;
+				     Scanner in = new Scanner(System.in );
+				     System.out.println("Enter temp in Fehranheit");
+				         temp = in.nextInt();
+				         temp = ((temp - 32)*5)/9;
+				
+				System.out.println("temp in C = " + temp);
+			*/
+				 }
+			}
+	}
+
+}

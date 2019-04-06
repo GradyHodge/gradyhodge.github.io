@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\BossMonkey\Desktop\JavaLava\.metadata\.plugins\org.eclipse.jdt.core
+45203121.index
+4264013011.index
+2627752299.index
+814987350.index
+3928942196.index
