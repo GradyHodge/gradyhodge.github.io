@@ -1,8 +1,52 @@
 /*
-Nav bar Experiment from W3schools
+CSS - MOBILE FIRST DESIGN
 */
-body {margin:0;font-family:Arial}
 
+* {
+  margin:3px;
+}
+/*this is for pushing the footer to the bottom of the page by creating a bottom margin that is the same height as the footer to overlap on top of
+html, body
+#container
+#main
+footer
+*/
+html, body {
+  height: 100%;
+}
+
+#container {
+  min-height: 45%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 50px;
+  width: 95%;
+  height: 10px;
+  position: relative;
+  margin-top: -10px;
+  text-align: center;
+
+}
+
+footer a {
+  color: lightblue;
+}
+
+body {margin:0;font-family:Arial}
+ 
+.siteLogo img, .title {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 2px;
+}
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -76,6 +120,9 @@ body {margin:0;font-family:Arial}
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    background-color: rgb(113, 189, 219);
+  }
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -85,7 +132,7 @@ body {margin:0;font-family:Arial}
   }
 }
 
-@media screen only and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;

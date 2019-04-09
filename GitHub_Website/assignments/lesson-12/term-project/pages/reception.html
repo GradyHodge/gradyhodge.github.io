@@ -32,48 +32,152 @@
 	2. Link to 4 additional temple pages dedicated to 4 Temple locations with identical page formatting
 	3. Use API to pull in actual temple calendar/schedule for each page
 -->
+<!--
+	CIT 230 | WK 12 TERM PROJECT
+	HOME PAGE | requirements
+	1. CTA - call now to learn how (to reserve)
+	2. TEMPLE SCHED SUMMARY - types of temple events we cater to
+	3. NAV BAR WITH WAYFINDER
+	4. OVERVIEW - hotel services
+	5. Group Event Packages
+	6. Footer- with Resources Page
+-->
+<!--MOBILE FIRST DESIGN-->
+<!--1. HEADER-->
+<!--2. HAMBURGER MENU-->
+<!--2. TABLET/LARGE MENU-->
+<!--3. OVERVIEW- HOTEL SERVICES-->
+
+<!--ABOVE THE FOLD       ABOVE THE FOLD       ABOVE THE FOLD       ABOVE THE FOLD-->
+<!--4. CTA- call now --  CTA shows at bottom of the first half of screen view and top of second half -->
+<!--BELOW THE FOLD       BELOW THE FOLD       BELOW THE FOLD        BELOW THE FOLD-->
+
+<!--5. GROUP PACKAGES-->
+<!--6. LOCAL TEMPLE SCHEDULES-->
+<!--7. CONTACT US-->
+
+
+<!--THIS IS THE ORIGINAL INDEX HTML CODE-->
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../styles/temple.css">
-<script src="../scripts/temple-script.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Reception | Temple Inn</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="../styles/normalize.css">
+	<!--<link rel="stylesheet" type="text/css" media="screen" href="../styles/mobile.css">-->
+	<link rel="stylesheet" type="text/css" media="screen" href="../styles/tablet.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../styles/large.css">
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="contact-us.css">
+<!--<script src="contact-us.js"></script>-->
+</head>
+<body>
+<!--MOBILE FIRST DESIGN-->
+<!--1. HEADER-->
+<header>
+	<section class="siteLogo">
+		<img src="../styles/images/cit-230-logo-handcart-clipart.jpg" alt="silhouette of family pushing handcart" class="logo">
+		<div class="title">
+			<h1>Temple Inn & Suites</h1>
+			<h3>A Place to Gather & Prepare</h3>
+		</div>
+	</section>
+<!--2. HAMBURGER MENU-->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Temple Inn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" media="screen" href="../styles/normalize.css">
+  
 </head>
 <body>
 
-<div class="navbar" id="NavbarMobile">
+<div class="topnav" id="myTopnav">
   <a href="#home" class="active">Home</a>
-  <a href="#reservations">Reservations</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
   <div class="dropdown">
-    <button class="dropbtn">Temples
+    <button class="dropbtn">Dropdown 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="../pages/temples-main.html">Temple Events</a>
-      <a href="../pages/temples-1.html">Temple 1</a>
-      <a href="../pages/temples-2.html">Temple 2</a>
-      <a href="../pages/temples-3.html">Temple 3</a>
-      <a href="../pages/temples-4.html">Temple 4</a>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
     </div>
-  </div>
-  <div class="dropdown">
-	<button class="dropbtn">Services
-		<i class="fa fa-caret-down"></i>
-	</button>
-	<div class="dropdown-content">
-		<a href="#">Reception</a>
-		<a href="#">Full-Time Temple Missionaries</a>
-	</div>
-	</div>
-  <a href="../pages/contact-us.html">Contact Us</a>
-  <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="hamburgerToggle()">&#9776;</a>
+  </div> 
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
 <div style="padding-left:16px">
-  <h2>Reception</h2>
-  <h3>We Do this all the time<br>How Can We Help?</h3>
-  
+  <h2>Responsive Topnav with Dropdown</h2>
+  <p>Resize the browser window to see how it works.</p>
+  <p>Hover over the dropdown button to open the dropdown menu.</p>
 </div>
+
+<script src="contact-us.js"></script>
+</body>
+</html>
+<!--2. TABLET/LARGE MENU TODO: ???media query???-->
+<!--3. OVERVIEW- HOTEL SERVICES-->
+<section class="overview">
+	<article>
+		<h3>
+			Our hotel services are designed to help you prepare to attend the temple
+		</h3>
+		<p>
+				A place to gather
+				A place to rest from the road
+				A place to Prepare
+				A place for children
+				A place to celebrate
+			</p>
+	</article>
+</section>
+<!--ABOVE THE FOLD       ABOVE THE FOLD       ABOVE THE FOLD       ABOVE THE FOLD-->
+
+<!--4. CTA- call now, CTA shows at bottom of the first half of screen view and top of second half -->
+<section class="cta">
+	<p>
+		Call now to learn how we can help you book your temple event and our hotel services together
+	</p>
+	<button class="cta">reserve now</button>
+</section>
+<!--BELOW THE FOLD       BELOW THE FOLD       BELOW THE FOLD        BELOW THE FOLD-->
+
+<!--5. GROUP PACKAGES-->
+<section class="packages">
+	<div id="groupdeals">
+		Weddings <br>
+		Live Endowments <br>
+		YSA Trips
+		Couples Retreat
+		Child Care
+	</div>
+</section>
+<!--6. LOCAL TEMPLE SCHEDULES-->
+<section class="templeInfo">
+		
+		<p>
+			Temple events<br>
+			Temple Schedule<br>
+			How to book an event at the temple<br>
+		</p>
+		<a href="">click here for local Temple Summary</a>
+</section>
+<!--7. FOOTER/ CONTACT US-->
+<footer class="contactInfo">
+		<p>&copy;<script type="text/javascript">
+			document.write(new Date().getFullYear());
+		 </script>,  BYU-I  |  CIT 230  | Term Project  |  Grady W Hodge.
+		 <a href="google doc share link">Site Plan Document</a>
+</p>
+</footer>
 </body>
 </html>

@@ -2,9 +2,11 @@
 
 //navbar toggle
 
-const toggleButton = document.getElementsByClassName('toggleButton')[0]
-const navbarLinks = document.getElementsByClassName('navbarLinks')[0]
-
-toggleButton.addEventListener('click', () => {
-	navbarLinks.classList.toggle('active')
-})
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+	  x.className += " responsive";
+	} else {
+	  x.className = "topnav";
+	}
+  }
