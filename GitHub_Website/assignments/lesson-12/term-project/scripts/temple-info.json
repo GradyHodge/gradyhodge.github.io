@@ -1,0 +1,57 @@
+/*JSON file built to simulate AJAX methods of retrieving data from a third party API, just like we did for getting weather data
+*/
+temple-1.json
+{
+	"templeName": "Salt Lake City Temple",
+	"templeAddress": "50 W North Temple St",
+	"templeCity": "Salt Lake City",
+	"templeState": "Utah",
+	"templeZip": "84150-9709",
+	"mainPhone": "(1)801-240-2640",
+	"daysClosed": ["Sunday", "Monday"],
+	"daysOpen": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+	"closureDates": ["4/19", "4/20", "7/2", "7/15", "7/24", "10/5", "11/27", "11/28", "11/29", "12/24", "12/25", "12/31"],
+	"services": ["Clothing Rental", "Cafeteria", "No Patron Housing","Distribution Center Nearby"]
+}
+
+temple-2.json
+{
+	"templeName": "Bountiful Temple",
+	"templeAddress": "50 W North Temple St",
+	"templeCity": "Bountiful",
+	"templeState": "Utah",
+	"templeZip": "84150-9709",
+	"mainPhone": "(1)801-240-2640",
+	"daysClosed": ["Sunday", "Monday"],
+	"daysOpen": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+	"closureDates": ["4/19", "4/20", "7/2", "7/15", "7/24", "10/5", "11/27", "11/28", "11/29", "12/24", "12/25", "12/31"],
+	"services": ["Clothing Rental", "Cafeteria", "No Patron Housing","Distribution Center Nearby"]
+}
+
+temple-3.json
+{
+	"templeName": "Jordon River Temple",
+	"templeAddress": "50 W North Temple St",
+	"templeCity": "Salt Lake City",
+	"templeState": "Utah",
+	"templeZip": "84150-9709",
+	"mainPhone": "(1)801-240-2640",
+	"daysClosed": ["Sunday", "Monday"],
+	"daysOpen": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+	"closureDates": ["4/19", "4/20", "7/2", "7/15", "7/24", "10/5", "11/27", "11/28", "11/29", "12/24", "12/25", "12/31"],
+	"services": ["Clothing Rental", "Cafeteria", "No Patron Housing","Distribution Center Nearby"]
+}
+
+temple-4.json
+{
+	"templeName": "Oquirrh Mountain Temple",
+	"templeAddress": "50 W North Temple St",
+	"templeCity": "Oquirrh Mountain",
+	"templeState": "Utah",
+	"templeZip": "84150-9709",
+	"mainPhone": "(1)801-240-2640",
+	"daysClosed": ["Sunday", "Monday"],
+	"daysOpen": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+	"closureDates": ["4/19", "4/20", "7/2", "7/15", "7/24", "10/5", "11/27", "11/28", "11/29", "12/24", "12/25", "12/31"],
+	"services": ["Clothing Rental", "Cafeteria", "No Patron Housing","Distribution Center Nearby"]
+}
