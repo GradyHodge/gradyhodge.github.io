@@ -148,18 +148,70 @@
 				function initMap(){
 //MAP OPTIONS
 					var options = {
-						zoom: 8,
+						zoom: 10,
 						center: {lat:38.98337, lng:-77.095575}
 					}
 //NEW MAP
 					var map = new google.maps.Map(document.getElementById("map"), options);
+/*
 //ADD MARKER
 					var marker = new google.maps.Marker({
 						position: {lat:38.98337, lng:-77.095575},
 						map: map,
-						icon: ""
-					});		
+						icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"
+					});
+
+					var infoWindow = new google.maps.InfoWindow({
+						content: "<h2>Temple Inn & Suites Headquarters</h2>"
+					});
+//ADD INFO WINDOW
+					marker.addListener("click", function(){
+						infoWindow.open(map, marker);
+					});
+*/
+
+//REFACTOR USING FLEXIBLE CODING VARIABLES
+
+//ADD MARKER FUNCTION
+
+					addMarker({
+						coords:{lat: 38.98337, lng: -77.095575},
+						iconImage:"https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"
+						content: "<h1>Temple Inn & Suites Headquarters</h1>"
+					});
+					addMarker({
+						coords:{lat: 39.015257, lng: -77.065680}
+						content: "<h1>second marker</h1>"
+					});
+					addMarker({
+						coords:{lat: 39.008062, lng: -77.022640}
+						content: "<h1>third marker</h1>"
+					});
+
+
+					function addMarker (props){
+						var marker = new google.maps.Marker({
+							position: props.coords,
+							map: map,
+							//icon: props.iconImage
+						});
+//CHECK FOR CUSTOM ICON (so if marker doesn't have an icon then it isn't listed as undefined, which is bad)
+					if(props.iconImage){
+//SET ICON IMAGE
+						marker.setIcon(props.iconImage);
+					}
+//CHECK FOR CONTENT (so if marker doesn't have content then it isn't listed as undefined)
+					if(props.content){
+						var infoWindow = new google.maps.InfoWindow({
+						content: props.content
+					});
+//ADD INFO WINDOW POP-UP WHEN CLICKED
+					marker.addListener("click", function(){
+						infoWindow.open(map, marker);
+					});
+					}
 				}
+			}
 
 			</script>
 			<script async defer
