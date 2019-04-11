@@ -36,7 +36,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<title>Missionaries | Temple Inn</title>
+	<title>Temple Inn</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 <!--Ordinarily, css files are combined into one file for performance-->
@@ -46,6 +46,12 @@
 	<link rel="stylesheet" type="text/css" href="../styles/large.css">
 	<link rel="stylesheet" type="text/css" href="../styles/tablet.css">
 	<link rel="stylesheet" type="text/css" href="mobile.css">
+	<style>
+		#map {
+			height: 400px;
+			width: 100%;
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -58,7 +64,7 @@
 		</section>
 <!--2. RESPONSIVE HAMBURGER MENU-->
 <div class="topnav" id="myTopnav">
-  <a href="#index.html" class="active">Home</a>
+  <a href="index.html">Home</a>
   <a href="reservations.html">Reservations</a>
   <div class="dropdown">
     <button class="dropbtn">Temples
@@ -77,14 +83,17 @@
 		</button>
 		<div class="dropdown-content">
 		  <a href="reception.html">Reception</a>
-		  <a href="temple-missionary.html">Temple Missionaries</a>
+		  <a href="temple-missionary.html" class="active">Temple Missionaries</a>
 		</div>
 	  </div>
-  <a href="#about">Contact</a>
+  <a href="contact-us.html">Contact</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 </header>
+
+<!--HOME PAGE-->
 <section class="infoBox" id="pitch"></section>
+<h1>Full-Time Temple Missionaries</h1>
 <h2>
 		Unique Value: Hotel Services for Temple Events
 	</h2>
@@ -128,23 +137,40 @@
 		</p>
 	</div>
 </section>
+
+<!--GOOGLE MAPS API-->
+
 <section id="container">
 		<div id="main">
-			<h2>Amenities</h2>
-				<ul>
-					<li>1 hour changing rooms</li>
-					<li>Oversized Storage Lockers</li>
-					<li>Half Day room booking</li>
-					<li>Child Care for temple events</li>
-					<li>Youth Group Accomodations</li>
-					<li>On Site Family History Research Facility</li>
-					<li>Sand Volleyball pits</li>
-					<li>Indoor Park & Playground</li>
-					<li>Inhouse Movie & Video game Hall</li>
-				</ul>
+			<h2>MAP OF TEMPLES</h2>
+			<div id="map"></div>
+			<script>
+				function initMap(){
+//MAP OPTIONS
+					var options = {
+						zoom: 8,
+						center: {lat:38.98337, lng:-77.095575}
+					}
+//NEW MAP
+					var map = new google.maps.Map(document.getElementById("map"), options);
+//ADD MARKER
+					var marker = new google.maps.Marker({
+						position: {lat:38.98337, lng:-77.095575},
+						map: map,
+						icon: ""
+					});		
+				}
+
+			</script>
+			<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSgbkX7NNn-ZRSpPXzzQM9ZWvf9OVW6NY&callback=initMap">
+
+			</script>
 		</div>
 	</section>
+
 <!--Javascript for Responsive NavBar (W3C)-->
+
 	<script>
 		function myFunction() {
 			var x = document.getElementById("myTopnav");

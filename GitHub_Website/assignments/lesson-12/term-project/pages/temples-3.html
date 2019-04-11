@@ -1,4 +1,12 @@
-
+<!--
+	Specific Temple Locations
+	1. Describe the destination temple
+	2. API - map
+	3. contact info
+	4. API- import calender
+	5. API- import temple services schedule
+	6. API- Current Weather
+-->
 <!--
 	1. Introduce Temple Event Types and pair them with group size/needs so you can reserve the appropriate services
 	2. Link to 4 additional temple pages dedicated to 4 Temple locations with identical page formatting
@@ -54,7 +62,7 @@
 		</section>
 <!--2. RESPONSIVE HAMBURGER MENU-->
 <div class="topnav" id="myTopnav">
-  <a href="#index.html">Home</a>
+  <a href="index.html" >Home</a>
   <a href="reservations.html">Reservations</a>
   <div class="dropdown">
     <button class="dropbtn">Temples
@@ -76,43 +84,69 @@
 		  <a href="temple-missionary.html">Temple Missionaries</a>
 		</div>
 	  </div>
-  <a href="#about">Contact</a>
+  <a href="contact-us.html">Contact</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 </header>
+
+<!--TEMPLE 1 | SLC TEMPLE-->
 <section class="infoBox" id="pitch"></section>
-<h2>
-		Unique Value: Hotel Services for Temple Events
-	</h2>
+	<h1>
+			Jordan River TEMPLE
+	</h1>
 		 <p>
-			 Hotel Services that are centered around temple attendance
-			<ul>
-				<li>Weddings</li>
-				<li>Family Sealings</li>
-				<li>Youth Groups</li>
-				<li>Traveling Families</li>
-				<li>Family History Research</li>
-			</ul>
+			Call ahead to plan your temple visit with the full-time Temple Missionaries
+				<ul>
+					<li>Weddings</li>
+					<li>Family Sealings</li>
+					<li>Live Endowments</li>
+					<li>Temple Work</li>
+					<li>Baptisms for the Dead</li>
+				</ul>
 			</p>
-	
+			
+	<div class="templeAPI">
+		<h1>Temple Schedule</h1>
+	</div>
+	<div class="weatherAPI">
+					<h1>Local Weather</h1>
+					<p>
+						The current teperature at the Salt Lake City Temple is <span id="cc-temp"></span>&deg; F
+						<img id="cc-img" src="" alt="">
+					</p>
+					<p>
+						With high's around <span id="cc-temp"></span>&deg; F, and lows in the <span id="cc-temp"></span>&deg; F
+					</p>
+					<p>
+						The wind speed is around <span id="cc-temp"></span> mph.
+					</p>
+					<p>
+						Call us about our "rainy day" weather back up plans.<br>
+						We've done this lots of times. Let our expert event planners help!
+					</p>
+
+					<script src="../scripts/weather-api.js"></script>
 	</div>
 </section>
 <section id="explanation">
 	<div>
 		<h2>How to Start</h2>
-		<p>
-			<ul>
-				<li>
-					Step 1: Schedule an Event at a temple nearby our Hotel
-				</li>
-				<li>
-					Step 2: Reserve you room and additional services with our hotel.
-				</li>
-				<li>
-					Step 3: Work with our seasoned staff to meet your needs before and after your temple event.
-				</li>
-			</ul>
-		</p>
+			<p>
+				Step 1: Contact the Temple Missionaries and Schedule your event
+			</p>
+			<p>
+				Step 2: Make Reservations at our hotel
+			</p>
+			<p>
+				Step 3: Connect with our Reception desk to coordinate additional hotel services such as:
+				<ul>
+					<li>Child Care</li>
+					<li>Special Guest Needs</li>
+					<li>Extended Family Room Reservations</li>
+					<li>Banquet Hall and Catering Services</li>
+					<li>Family History Research Assistance</li>
+				</ul>
+			</p>
 	</div>
 </section>
 <section id="callNow">
@@ -126,17 +160,14 @@
 </section>
 <section id="container">
 		<div id="main">
-			<h2>Amenities</h2>
+			<h2>Temple Attendance in Groups</h2>
 				<ul>
-					<li>1 hour changing rooms</li>
-					<li>Oversized Storage Lockers</li>
-					<li>Half Day room booking</li>
-					<li>Child Care for temple events</li>
-					<li>Youth Group Accomodations</li>
-					<li>On Site Family History Research Facility</li>
-					<li>Sand Volleyball pits</li>
-					<li>Indoor Park & Playground</li>
-					<li>Inhouse Movie & Video game Hall</li>
+					<li>Wedding Groups</li>
+					<li>Family Sealing Groups</li>
+					<li>Youth Group Baptisms for the Dead</li>
+					<li>Young Single Adult Groups</li>
+					<li>Family History Research Assistance</li>
+					<li>Temple Toursit Travel Package</li>
 				</ul>
 		</div>
 	</section>

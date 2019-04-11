@@ -43,7 +43,7 @@
 		</section>
 <!--2. RESPONSIVE HAMBURGER MENU-->
 <div class="topnav" id="myTopnav">
-  <a href="#index.html" class="active">Home</a>
+  <a href="index.html">Home</a>
   <a href="reservations.html">Reservations</a>
   <div class="dropdown">
     <button class="dropbtn">Temples
@@ -65,14 +65,21 @@
 		  <a href="temple-missionary.html">Temple Missionaries</a>
 		</div>
 	  </div>
-  <a href="#about">Contact</a>
+  <a href="contact-us.html" class="active">Contact</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 </header>
 <section class="infoBox" id="pitch"></section>
-<h2>
-		Unique Value: Hotel Services for Temple Events
+	<h1>CONTACT US</h1>
+	<h2>
+		Got a Question? | WE DO THIS ALL THE TIME | We can help!
 	</h2>
+
+		<p>
+			BIG Questions, Little Questions,<br>
+			Silly Questions, Frilly Questions<br>
+			We've probably heard it before, Please Call Us</p>
+	
 		 <p>
 			 Hotel Services that are centered around temple attendance
 			<ul>
@@ -114,20 +121,33 @@
 	</div>
 </section>
 <section id="container">
-		<div id="main">
-			<h2>Amenities</h2>
-				<ul>
-					<li>1 hour changing rooms</li>
-					<li>Oversized Storage Lockers</li>
-					<li>Half Day room booking</li>
-					<li>Child Care for temple events</li>
-					<li>Youth Group Accomodations</li>
-					<li>On Site Family History Research Facility</li>
-					<li>Sand Volleyball pits</li>
-					<li>Indoor Park & Playground</li>
-					<li>Inhouse Movie & Video game Hall</li>
-				</ul>
-		</div>
+				  <style>
+					/* Set the size of the div element that contains the map */
+					#map {
+					  height: 400px;  /* The height is 400 pixels */
+					  width: 100%;  /* The width is the width of the web page */
+					 }
+				  </style>
+
+				  <h3>My Google Maps Demo</h3>
+				  <!--The div element for the map -->
+				  <div id="map"></div>
+
+				  <script>
+			  // Initialize and add the map
+			  function initMap() {
+				// The location of Uluru
+				var uluru = {lat: 38.98337, lng: -77.095575};
+				// The map, centered at Uluru
+				var map = new google.maps.Map(
+					document.getElementById('map'), {zoom: 15, center: uluru});
+				// The marker, positioned at Uluru
+				var marker = new google.maps.Marker({position: uluru, map: map});
+			  }
+				  </script>
+				  <script async defer
+				  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEOKUw7PtscNg-JeY0YiV2tSwopwCJ6F4&callback=initMap">
+				  </script>
 	</section>
 <!--Javascript for Responsive NavBar (W3C)-->
 	<script>

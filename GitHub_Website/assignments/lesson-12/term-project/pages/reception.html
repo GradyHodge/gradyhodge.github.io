@@ -61,123 +61,134 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Reception | Temple Inn</title>
+	<title>Temple Inn</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+<!--Ordinarily, css files are combined into one file for performance-->
 	<link rel="stylesheet" type="text/css" media="screen" href="../styles/normalize.css">
-	<!--<link rel="stylesheet" type="text/css" media="screen" href="../styles/mobile.css">-->
-	<link rel="stylesheet" type="text/css" media="screen" href="../styles/tablet.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="../styles/large.css">
-	<script src="main.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="contact-us.css">
-<!--<script src="contact-us.js"></script>-->
-</head>
-<body>
-<!--MOBILE FIRST DESIGN-->
-<!--1. HEADER-->
-<header>
-	<section class="siteLogo">
-		<img src="../styles/images/cit-230-logo-handcart-clipart.jpg" alt="silhouette of family pushing handcart" class="logo">
-		<div class="title">
-			<h1>Temple Inn & Suites</h1>
-			<h3>A Place to Gather & Prepare</h3>
-		</div>
-	</section>
-<!--2. HAMBURGER MENU-->
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <title>Temple Inn</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" media="screen" href="../styles/normalize.css">
-  
-</head>
-<body>
 
+	<link rel="stylesheet" type="text/css" href="../styles/large.css">
+	<link rel="stylesheet" type="text/css" href="../styles/tablet.css">
+	<link rel="stylesheet" type="text/css" href="mobile.css">
+</head>
+<body>
+	<header>
+		<section class="siteLogo">
+			<img src="../styles/images/cit-230-logo-handcart-clipart.jpg" alt="silhouette of family pushing handcart" id="logo">
+			<div class="title">
+				<h1>Temple Inn & Suites</h1>
+				<h3>A Place to Gather & Prepare</h3>
+			</div>
+		</section>
+<!--2. RESPONSIVE HAMBURGER MENU-->
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="reservations.html">Reservations</a>
   <div class="dropdown">
-    <button class="dropbtn">Dropdown 
+    <button class="dropbtn">Temples
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="temples-1.html">Salt Lake Temple</a>
+      <a href="temples-2.html">Bountiful Temple</a>
+      <a href="temples-3.html">Jordan River Temple</a>
+      <a href="temples-4.html">Oquirrh Mountain Temple</a>
     </div>
-  </div> 
-  <a href="#about">About</a>
+  </div>
+  <div class="dropdown">
+		<button class="dropbtn">Services
+		  <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="reception.html" class="active">Reception</a>
+		  <a href="temple-missionary.html">Temple Missionaries</a>
+		</div>
+	  </div>
+  <a href="contact-us.html">Contact</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
+</header>
 
-<div style="padding-left:16px">
-  <h2>Responsive Topnav with Dropdown</h2>
-  <p>Resize the browser window to see how it works.</p>
-  <p>Hover over the dropdown button to open the dropdown menu.</p>
-</div>
-
-<script src="contact-us.js"></script>
-</body>
-</html>
-<!--2. TABLET/LARGE MENU TODO: ???media query???-->
-<!--3. OVERVIEW- HOTEL SERVICES-->
-<section class="overview">
-	<article>
-		<h3>
-			Our hotel services are designed to help you prepare to attend the temple
-		</h3>
-		<p>
-				A place to gather
-				A place to rest from the road
-				A place to Prepare
-				A place for children
-				A place to celebrate
+<!--HOME PAGE-->
+<section class="infoBox" id="pitch"></section>
+<h1>RECEPTION</h1>
+<h2>
+		Unique Value: Hotel Services for Temple Events
+	</h2>
+		 <p>
+			 Hotel Services that are centered around temple attendance
+			<ul>
+				<li>Weddings</li>
+				<li>Family Sealings</li>
+				<li>Youth Groups</li>
+				<li>Traveling Families</li>
+				<li>Family History Research</li>
+			</ul>
 			</p>
-	</article>
-</section>
-<!--ABOVE THE FOLD       ABOVE THE FOLD       ABOVE THE FOLD       ABOVE THE FOLD-->
-
-<!--4. CTA- call now, CTA shows at bottom of the first half of screen view and top of second half -->
-<section class="cta">
-	<p>
-		Call now to learn how we can help you book your temple event and our hotel services together
-	</p>
-	<button class="cta">reserve now</button>
-</section>
-<!--BELOW THE FOLD       BELOW THE FOLD       BELOW THE FOLD        BELOW THE FOLD-->
-
-<!--5. GROUP PACKAGES-->
-<section class="packages">
-	<div id="groupdeals">
-		Weddings <br>
-		Live Endowments <br>
-		YSA Trips
-		Couples Retreat
-		Child Care
+	
 	</div>
 </section>
-<!--6. LOCAL TEMPLE SCHEDULES-->
-<section class="templeInfo">
-		
+<section id="explanation">
+	<div>
+		<h2>How to Start</h2>
 		<p>
-			Temple events<br>
-			Temple Schedule<br>
-			How to book an event at the temple<br>
+			<ul>
+				<li>
+					Step 1: Schedule an Event at a temple nearby our Hotel
+				</li>
+				<li>
+					Step 2: Reserve you room and additional services with our hotel.
+				</li>
+				<li>
+					Step 3: Work with our seasoned staff to meet your needs before and after your temple event.
+				</li>
+			</ul>
 		</p>
-		<a href="">click here for local Temple Summary</a>
+	</div>
 </section>
+<section id="callNow">
+	<div class="cta">
+		<h2>Call Us Now and We'll Walk You Through the Process</h2>
+		<p>
+			Our seasoned staff is ready and waiting to help you to gather your family and prepare to enter the temple refreshed and poised ready to listen and learn
+		</p>
+	</div>
+</section>
+<section id="container">
+		<div id="main">
+			<h2>Amenities</h2>
+				<ul>
+					<li>1 hour changing rooms</li>
+					<li>Oversized Storage Lockers</li>
+					<li>Half Day room booking</li>
+					<li>Child Care for temple events</li>
+					<li>Youth Group Accomodations</li>
+					<li>On Site Family History Research Facility</li>
+					<li>Sand Volleyball pits</li>
+					<li>Indoor Park & Playground</li>
+					<li>Inhouse Movie & Video game Hall</li>
+				</ul>
+		</div>
+	</section>
+<!--Javascript for Responsive NavBar (W3C)-->
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+			x.className += " responsive";
+			} else {
+			x.className = "topnav";
+			}
+		}
+	</script>
 <!--7. FOOTER/ CONTACT US-->
-<footer class="contactInfo">
-		<p>&copy;<script type="text/javascript">
-			document.write(new Date().getFullYear());
-		 </script>,  BYU-I  |  CIT 230  | Term Project  |  Grady W Hodge.
-		 <a href="google doc share link">Site Plan Document</a>
-</p>
+	<footer class="contactInfo">
+			<p>&copy;<script type="text/javascript">
+				document.write(new Date().getFullYear());
+			</script>,  BYU-I  |  CIT 230  |  Term Project  |  Grady W Hodge<br>
+			<a href="resources.html">Site Plan Document</a>
+	</p>
 </footer>
 </body>
 </html>
