@@ -121,33 +121,103 @@
 	</div>
 </section>
 <section id="container">
-				  <style>
-					/* Set the size of the div element that contains the map */
-					#map {
-					  height: 400px;  /* The height is 400 pixels */
-					  width: 100%;  /* The width is the width of the web page */
-					 }
-				  </style>
+		<div id="main">
+			<h2>HOTEL CORPORATE HEADQUARTERS</h2>
+			<div id="map"></div>
+			<script>
+				function initMap(){
+//MAP OPTIONS
+					var options = {
+						zoom: 10,
+						center: {lat:38.98337, lng:-77.095575}
+					}
+//NEW MAP
+					var map = new google.maps.Map(document.getElementById("map"), options);
+/*
+//ADD MARKER
+					var marker = new google.maps.Marker({
+						position: {lat:38.98337, lng:-77.095575},
+						map: map,
+						icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"
+					});
 
-				  <h3>My Google Maps Demo</h3>
-				  <!--The div element for the map -->
-				  <div id="map"></div>
+					var infoWindow = new google.maps.InfoWindow({
+						content: "<h2>Temple Inn & Suites Headquarters</h2>"
+					});
+//ADD INFO WINDOW
+					marker.addListener("click", function(){
+						infoWindow.open(map, marker);
+					});
+*/
+//**2nd REFACTORING TO TURN MARKER PROPERTIES INTO AN ARRAY THAT WE CAN EASILY PASS INTO 
+//ARRAY OF MARKERS (2nd refactor, turning marker properties into an array)
+					var markers = [
+						{
+							coords:{lat: 38.98337, lng: -77.095575},
+							iconImage:"https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+							content: "<h2>Temple Inn & Suites Headquarters</h2><br><h3>Bethesda, MD</h3>"
+						},
+						{
+							coords:{lat: 39.002330, lng: -77.399604},
+							content: "<h1>Nearest LDS Chapel</h1>"
+						},
+						{
+							coords:{lat: 39.008062, lng: -77.022640},
+							content: "<h1>Washingtion Temple</h1><br><h3>Washington D.C.</h3>"
+						}
+					];
+//**2nd Refactoring - Looping through the new addMarker array set up above
+						for (var i =0; i < markers.length; i++) {
+							addMarker(markers[i]);
+						}
+//1st REFACTOR USING FLEXIBLE CODING VARIABLES
 
-				  <script>
-			  // Initialize and add the map
-			  function initMap() {
-				// The location of Uluru
-				var uluru = {lat: 38.98337, lng: -77.095575};
-				// The map, centered at Uluru
-				var map = new google.maps.Map(
-					document.getElementById('map'), {zoom: 15, center: uluru});
-				// The marker, positioned at Uluru
-				var marker = new google.maps.Marker({position: uluru, map: map});
-			  }
-				  </script>
-				  <script async defer
-				  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEOKUw7PtscNg-JeY0YiV2tSwopwCJ6F4&callback=initMap">
-				  </script>
+//ADD MARKER FUNCTION
+				/*
+					addMarker({
+						coords:{lat: 38.98337, lng: -77.095575},
+						iconImage:"https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+						content: "<h1>Temple Inn & Suites Headquarters</h1>"
+					});
+					addMarker({
+						coords:{lat: 39.015257, lng: -77.065680},
+						content: "<h1>second marker</h1>"
+					});
+					addMarker({
+						coords:{lat: 39.008062, lng: -77.022640},
+						content: "<h1>third marker</h1>"
+					});
+				*/
+
+					function addMarker (props){
+						var marker = new google.maps.Marker({
+							position: props.coords,
+							map: map,
+							icon:props.iconImage
+						});
+//CHECK FOR CUSTOM ICON (so if marker doesn't have an icon then it isn't listed as undefined, which is bad)
+					if(props.iconImage){
+//SET ICON IMAGE
+						marker.setIcon(props.iconImage);
+					}
+//CHECK FOR CONTENT (so if marker doesn't have content then it isn't listed as undefined)
+					if(props.content){
+						var infoWindow = new google.maps.InfoWindow({
+						content: props.content
+					});
+//ADD INFO WINDOW POP-UP WHEN CLICKED
+					marker.addListener("click", function(){
+						infoWindow.open(map, marker);
+					});
+					}
+				}
+			}
+			</script>
+			<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSgbkX7NNn-ZRSpPXzzQM9ZWvf9OVW6NY&callback=initMap">
+
+			</script>
+		</div>
 	</section>
 <!--Javascript for Responsive NavBar (W3C)-->
 	<script>

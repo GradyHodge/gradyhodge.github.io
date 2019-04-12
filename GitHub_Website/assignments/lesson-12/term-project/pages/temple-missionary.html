@@ -142,14 +142,14 @@
 
 <section id="container">
 		<div id="main">
-			<h2>MAP OF TEMPLES</h2>
+			<h2>MAP OF HOTEL & NEARBY TEMPLES</h2>
 			<div id="map"></div>
 			<script>
 				function initMap(){
 //MAP OPTIONS
 					var options = {
 						zoom: 10,
-						center: {lat:38.98337, lng:-77.095575}
+						center: {lat: 40.744271, lng: -111.872159}
 					}
 //NEW MAP
 					var map = new google.maps.Map(document.getElementById("map"), options);
@@ -169,31 +169,59 @@
 						infoWindow.open(map, marker);
 					});
 */
-
-//REFACTOR USING FLEXIBLE CODING VARIABLES
+//**2nd REFACTORING TO TURN MARKER PROPERTIES INTO AN ARRAY THAT WE CAN EASILY PASS INTO 
+//ARRAY OF MARKERS (2nd refactor, turning marker properties into an array)
+					var markers = [
+						{
+							coords:{lat: 40.715450, lng: -111.888124},
+							iconImage:"https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+							content: "<h2>Temple Inn & Suites Salt Lake City Hotel</h2><br><h3>Salt Lake City, Utah</h3>"
+						},
+						{
+							coords:{lat: 40.770664, lng: -111.891892},
+							content: "<h1>Salt Lake City Temple</h1><br><h3>Salt Lake City, Utah</h3>"
+						},
+						{
+							coords:{lat: 40.770664, lng: -111.891892},
+							content: "<h1>Bountiful Temple</h1><br><h3>Bountiful City, Utah</h3>"
+						},
+						{
+							coords:{lat: 40.598449, lng: -111.924344},
+							content: "<h1>Jordan River Temple</h1><br><h3>Jordan River, Utah</h3>"
+						},
+						{
+							coords:{lat: 40.576549, lng: -111.982022},
+							content: "<h1>Oquirrh Mountain Temple</h1><br><h3>Oquirrh Mountain, Utah</h3>"
+						}
+					];
+//**2nd Refactoring - Looping through the new addMarker array set up above
+						for (var i =0; i < markers.length; i++) {
+							addMarker(markers[i]);
+						}
+//1st REFACTOR USING FLEXIBLE CODING VARIABLES
 
 //ADD MARKER FUNCTION
-
+				/*
 					addMarker({
 						coords:{lat: 38.98337, lng: -77.095575},
-						iconImage:"https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"
+						iconImage:"https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
 						content: "<h1>Temple Inn & Suites Headquarters</h1>"
 					});
 					addMarker({
-						coords:{lat: 39.015257, lng: -77.065680}
+						coords:{lat: 39.015257, lng: -77.065680},
 						content: "<h1>second marker</h1>"
 					});
 					addMarker({
-						coords:{lat: 39.008062, lng: -77.022640}
+						coords:{lat: 39.008062, lng: -77.022640},
 						content: "<h1>third marker</h1>"
 					});
-
+				*/
 
 					function addMarker (props){
 						var marker = new google.maps.Marker({
 							position: props.coords,
 							map: map,
-							//icon: props.iconImage
+							icon:props.iconImage
 						});
 //CHECK FOR CUSTOM ICON (so if marker doesn't have an icon then it isn't listed as undefined, which is bad)
 					if(props.iconImage){
@@ -212,7 +240,6 @@
 					}
 				}
 			}
-
 			</script>
 			<script async defer
 				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSgbkX7NNn-ZRSpPXzzQM9ZWvf9OVW6NY&callback=initMap">
