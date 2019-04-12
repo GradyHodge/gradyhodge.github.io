@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            WK 11 Investment Calculator
+        </title>
+<!--DEFINING TABLE
+      INPUT: user inputs the following four arguments into function parameters: principal, annualRate, years, periodsPerYear
+    PROCESS: use 2 functions, one to set the parameters and to call the other function with the formula
+             Also simplify equations by splitting up the formula into several different JS statements.
+     OUTPUT: future value
+-->
+
+        <script>
+//this function takes no parameters, 
+//is called from onclick,
+
+        function doFV () {
+//gets input from user
+            var principal =      parseFloat(document.getElementById("principalInputBox").value);
+            var annualRate =     parseFloat(document.getElementById("annualRateInputBox").value);
+            var years =          parseFloat(document.getElementById("yearsInputBox").value);
+            var periodsPerYear = parseFloat(document.getElementById("periodsInputBox").value);
+//adds the second function into this function
+            var futureValue = computeFutureValue (principal, annualRate, years, periodsPerYear);
+            var output = Math.round(futureValue * 100) / 100;
+
+//calls the computeFutureValue function
+            document.getElementById("futureValueOutputBox").innerHTML = output;
+        }
+/*
+The second function (computeFutureValue) computes and returns the future value of an investment. 
+The formula for computing the future value of an investment is: f = a (1 + r)n 
+*/
+        function computeFutureValue( principal, annualRate, years, periodsPerYear) {
+        // my original code that is not displaying results anymore
+            var f;
+            var a = principal;
+            var r = annualRate / periodsPerYear; //correction: var r = annualRate / periodsPerYear ; // - growth rate per period
+            var n = periodsPerYear * years;
+
+            var f = a * Math.pow((1 + r), n);
+            return f.toFixed(2);
+        /* //Alternate attempt for rewriting equation
+            var a = principal;    
+            var r = annualRate / periodsPerYear;
+            var n = periodsPerYear * years;
+
+            var futureValue = a * (Math.pow ((1+r),n));
+
+            futureValue = Math.round (futureValue * 100)/100;
+            return futureValue.toFixed(2);
+
+         //but this second version of the equation is also still not working
+         //I'm misunderstanding something here. I think I might be having the same problems with my code the last 2-3 weeks.
+        */ 
+        }
+        </script>
+    </head>
+        <body>
+<!--
+     INPUT: user inputs 4 arguments that get placed into parameter function
+    OUTPUT: future value
+-->
+            Amount Invested (principal).         <input type = "text" id = "principalInputBox"  size = 5> <br>
+            Annual rate (example: .08)...        <input type = "text" id = "annualRateInputBox" size = 5> <br>
+            Number of years...................   <input type = "text" id = "yearsInputBox"      size = 5> <br>
+            Periods per year.....................<input type = "text" id = "periodsInputBox"    size = 5> <br>
+
+            <button type = "button" onclick = "doFV ()" >Compute Future Value</button>
+
+            <div id = "futureValueOutputBox"></div>
+        </body>
+    </html>
+    

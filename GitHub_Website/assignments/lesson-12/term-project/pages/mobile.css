@@ -14,6 +14,53 @@ footer
 html, body {
   height: 100%;
 }
+
+.title {
+  color: #1d466d;
+}
+
+.infoBox {
+  background-color: #a9d2e6;
+  margin: 10px;
+  padding: 15px;
+}
+
+#pitch {
+  margin-bottom: 100px:
+}
+
+#explanation {
+  background-color: #a9d2e6;
+  margin: 10px;
+  padding: 15px;
+}
+
+#callNow {
+  color: #153655;
+}
+
+.cta {
+  border: solid 3px green;
+  margin: 8px;
+  text-align: center;
+}
+
+.ctaButton {
+    background-color: #159e19;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    font-size: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
 /*
 MAPS - BELOW
 */
@@ -43,15 +90,18 @@ footer {
   position: relative;
   margin-top: -10px;
   text-align: center;
+  
 
 }
 
 footer a {
   color: lightblue;
+  margin: 15px;
+  
 }
 
 body {margin:0;font-family:Arial}
- 
+
 .siteLogo img, .title {
   display: inline-block;
   vertical-align: middle;
@@ -59,7 +109,7 @@ body {margin:0;font-family:Arial}
 }
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #0e4b5a;
 }
 
 .topnav a {
@@ -73,7 +123,7 @@ body {margin:0;font-family:Arial}
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #159e19;
   color: white;
 }
 
@@ -87,7 +137,7 @@ body {margin:0;font-family:Arial}
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;    
+  font-size: 17px;
   border: none;
   outline: none;
   color: white;
@@ -131,7 +181,7 @@ body {margin:0;font-family:Arial}
 
 @media screen and (max-width: 600px) {
   body {
-    background-color: rgb(113, 189, 219);
+    background-color: #cae1eb;
   }
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
