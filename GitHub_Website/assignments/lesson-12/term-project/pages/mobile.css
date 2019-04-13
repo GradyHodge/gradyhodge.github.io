@@ -57,6 +57,7 @@ html, body {
   border: solid 3px green;
   margin: 8px;
   text-align: center;
+  padding: 15px;
 }
 
 .ctaButton {
@@ -70,7 +71,7 @@ html, body {
     justify-content: center;
     width: 30%;
     font-size: 20px;
-    margin: 0 auto;
+    margin:15px auto;
     cursor: pointer;
     border-radius: 40px;
 }
@@ -78,6 +79,10 @@ html, body {
 #reserveButton {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+#callUs {
+  text-align: center;
 }
 
 .templeButton {
@@ -98,6 +103,9 @@ html, body {
     max-height: 35px;
     max-width: 170px;
 }
+
+#phoneButton {
+  min-width: 170px;
 }
 
 /*
@@ -106,6 +114,7 @@ MAPS - BELOW
 #map {
   height: 400px;
   width: 100%;
+  margin-top: 15px;
 }
 /*
 MAPS - ABOVE
@@ -135,12 +144,13 @@ input:focus, textarea:focus {
 #container {
   min-height: 45%;
   margin-bottom:15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 #main {
   overflow: auto;
   padding-bottom: 10px;
+  margin-top: 15px;
 }
 
 #main li {
