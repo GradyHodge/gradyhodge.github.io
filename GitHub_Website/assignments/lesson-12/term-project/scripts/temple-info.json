@@ -1,7 +1,4 @@
-/*JSON file built to simulate AJAX methods of retrieving data from a third party API, just like we did for getting weather data
-*/
 [
-//temple 1 = temple 0	
 	{
 	"templeName": "Salt Lake City Temple",
 	"templeAddress": "50 W North Temple St",
@@ -68,7 +65,6 @@
 		"8:00 PM"
 	]
 },
-//temple-2.json = temple 1
 {
 	"templeName": "Bountiful Temple",
 	"templeAddress": "50 W North Temple St",
@@ -135,7 +131,6 @@
 		"8:00 PM"
 	]
 },
-//temple-3.json = temple 3
 {
 	"templeName": "Jordon River Temple",
 	"templeAddress": "50 W North Temple St",
@@ -202,7 +197,6 @@
 		"8:00 PM"
 	]
 },
-//temple-4.json = temple 3
 {
 	"templeName": "Oquirrh Mountain Temple",
 	"templeAddress": "50 W North Temple St",
