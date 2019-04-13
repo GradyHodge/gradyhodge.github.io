@@ -58,24 +58,38 @@
 </div>
 </header>
 <!--RESERVATIONS PAGE CONTENT-->
-<section class="infoBox" id="pitch"></section>
-<h2>
+<section class="infoBox" id="pitch">
+<h2 class="wayfinder">
 		RESERVATIONS
 	</h2>
 		 <p>
-			 HOW to Book a Temple Event & Hotel Services
+			 <h3>How to Book a Temple Event & Hotel Services</h3>
+			 <br>
+			<strong>Question 1: How big is your group?</strong>
+			<ul>
+				<li>Wedding Groups</li>
+				<li>Family Reunions</li>
+				<li>Youth Groups</li>
+				<li>Traveling Family</li>
+				<li>Band of Friends</li>
+				<li>Couples Retreat</li>
+			</ul>
+		</p>
+		<br>
+		<p>
+			<strong>Question 2: What type of temple events will you be attending?</strong>
 			<ul>
 				<li>Weddings</li>
 				<li>Family Sealings</li>
-				<li>Youth Groups</li>
-				<li>Traveling Families</li>
+				<li>Live Endowments</li>
+				<li>Temple Work</li>
 				<li>Family History Research</li>
 			</ul>
 			</p>
 	
 	</div>
 </section>
-<section id="explanation">
+<section class="explanation">
 	<div>
 		<h2>Hotel Services</h2>
 		<p>
@@ -84,8 +98,9 @@
 					Wedding Guest Accomodations
 				</li>
 				<li>
-					Wedding Food & Banquet Hall Services
+					Food & Catering  Services
 				</li>
+				<li>Banquet Hall Decoration Services</li>
 				<li>
 					Youth Group Accomodations
 				</li>
@@ -93,7 +108,7 @@
 					Child Care
 				</li>
 				<li>
-					Changing Rooms
+					Free Changing Rooms
 				</li>
 			</ul>
 		</p>
@@ -101,13 +116,18 @@
 </section>
 <section id="callNow">
 	<div class="cta">
-		<h2>Call Us Now and We'll Walk You Through the Process</h2>
+		<h2>Call Us Now and we'll help you match up our services with the needs of your groups temple events</h2>
+		<br>
+		<h2>1-801-888-7777</h2>
+		<a id="reserveButton" href="contact-us.html" class="ctaButton">Reserve Now</a>
 		<p>
+			<strong>
 			Our seasoned staff is ready and waiting to help you to gather your family and prepare to enter the temple refreshed and poised ready to listen and learn
+			</strong>
 		</p>
 	</div>
 </section>
-<section id="container">
+<section class="infoBox" id="container">
 		<div id="main">
 			<h2>Accomodations & Hotel Services</h2>
 			<ul>
@@ -116,6 +136,8 @@
 				</li>
 				<li>
 					Kitchen & Catering Services
+				</li>
+				<li>Reserved Staging areas
 				</li>
 				<li>
 					Decorations & Banquet Services
@@ -134,20 +156,58 @@
 				</li>
 			</ul>
 			<br>
-			<h3>Amenities</h3>
-				<ul>
-					<li>1 hour changing rooms</li>
-					<li>Oversized Storage Lockers</li>
-					<li>Half Day room booking</li>
-					<li>Child Care for temple events</li>
-					<li>Youth Group Accomodations</li>
-					<li>On Site Family History Research Facility</li>
-					<li>Sand Volleyball pits</li>
-					<li>Indoor Park & Playground</li>
-					<li>Inhouse Movie & Video game Hall</li>
-				</ul>
 		</div>
-	</section>
+</section>
+			<section class="formBox">
+				<h2>RESERVATION FORM</h2>
+				<form action="contactform.php" method="post" class="forms" id="reserveForm">
+					First Name: <input type="text" name="firstName" placeholder="first name"><br>
+					Last Name: <input type="text" name="lastName" placeholder="last name"><br>
+					best email: <input type="text" name="email" placeholder="best email"><br>
+					best phone: <input type="text" name="phone" placeholder="mobile phone"><br><br>
+			<h2>
+				<strong>Type of Temple Event: </strong>
+			</h2>
+				<select name="templeEvent">
+					<option value="event1">Wedding</option>
+					<option value="event2">Live Endowments</option>
+					<option value="event3">Family Sealing</option>
+					<option value="event4">Temple Work</option>
+					<option value="event5">Baptisms for the Dead</option>
+					<option value="event6">Family Research</option>
+					<option value="event7">none</option>
+				</select><br><br>
+			<h2><strong>Group Profile</strong></h2>
+					Group Name: <input type="text" name="partyName" placeholder=" i.e. Smith Wedding"><br>
+					<br>Create Strong Password: <input type="password" name="pwd" placeholder=" i.e. PASsword-123-$%^"><br><br>
+					<strong>Current Temple Recommend Holder</strong> (for discounts)<br>
+					All Party Temple Recommends are current: <input type="radio" name="temple recommend" value="Option1"><br>
+					Working on Getting a Temple Recommend: <input type="radio" name="temple recommend" value="Option2"><br><br>
+					
+					Number of Guests staying the night: 
+					<input type="number" name="partySize"><br><br>
+					Number of rooms needed for reservation: 
+					<input type="number" name="roomQuantity"><br><br>
+					Number of Guests attending temple: 
+					<input type="number" name="templeSize"><br><br>
+					Number of family members who need Day Care services: <input type="number" name="dayCare"><br><br>
+			
+				
+			<strong>Payment Information:</strong><br>
+					Card Type: <select name="cardType">
+							<option value="visa">Visa</option>
+							<option value="Mastercard">MasterCard</option>
+							<option value="AmExcard">American Experess</option>
+					Name on Card: <input type="text" name="cardName"><br>
+					Card Number: <input type="text" name="cardNum"><br>
+					Exp Date: <input type="number" name="expires"><br>
+					CSV Number: <input 	type="number" name="csv"><br><br>
+
+					<button type="submit" name="submit">Submit</button><br>
+				</form>
+			</section>
+		
+	
 <!--Javascript for Responsive NavBar (W3C)-->
 	<script>
 		function myFunction() {

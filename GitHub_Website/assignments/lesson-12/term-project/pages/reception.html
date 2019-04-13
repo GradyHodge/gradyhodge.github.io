@@ -17,21 +17,7 @@
 	2. Link to 4 additional temple pages dedicated to 4 Temple locations with identical page formatting
 	3. Use API to pull in actual temple calendar/schedule for each page
 -->
-<!--
-	1. Introduce Temple Event Types and pair them with group size/needs so you can reserve the appropriate services
-	2. Link to 4 additional temple pages dedicated to 4 Temple locations with identical page formatting
-	3. Use API to pull in actual temple calendar/schedule for each page
--->
-<!--
-	1. GOOGLE MAP -must include embedded Google Map, links to an external site showing company headquarters
-	2. CONTACT FORM
-	3. 6 STEP PROCESS ON HOW TO BOOK TEMPLE EVENT AND RESERVE HOTEL SERVICES/ROOMS
--->
-<!--
-	1. Introduce Temple Event Types and pair them with group size/needs so you can reserve the appropriate services
-	2. Link to 4 additional temple pages dedicated to 4 Temple locations with identical page formatting
-	3. Use API to pull in actual temple calendar/schedule for each page
--->
+
 <!--
 	CIT 230 | WK 12 TERM PROJECT
 	HOME PAGE | requirements
@@ -56,14 +42,6 @@
 <!--6. LOCAL TEMPLE SCHEDULES-->
 <!--7. CONTACT US-->
 
-
-<!--THIS IS THE ORIGINAL INDEX HTML CODE-->
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-	<title>Temple Inn</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8">
 <!--Ordinarily, css files are combined into one file for performance-->
 	<link rel="stylesheet" type="text/css" media="screen" href="../styles/normalize.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -110,85 +88,102 @@
 </div>
 </header>
 
-<!--HOME PAGE-->
-<section class="infoBox" id="pitch"></section>
-<h1>RECEPTION</h1>
-<h2>
-		Unique Value: Hotel Services for Temple Events
-	</h2>
-		 <p>
-			 Hotel Services that are centered around temple attendance
-			<ul>
-				<li>Weddings</li>
-				<li>Family Sealings</li>
-				<li>Youth Groups</li>
-				<li>Traveling Families</li>
-				<li>Family History Research</li>
-			</ul>
+<!--RECEPTION PAGE-->
+<section class="infoBox" id="pitch">
+		<h2 class="wayfinder">
+				RECEPTION
+			</h2>
+				 <p>
+					 <h3>WE'VE DONE THIS LOT'S OF TIMES | LET US HELP!</h3>
+					 <br>
+					
+		</section>
+		<section class="explanation">
+			<div>
+				<h3>OUR AMENITIES ARE TAILORED TO MEET YOUR NEEDS AS YOU ATTEND THE TEMPLE</h3>
+				<p>
+					<ul>
+						<li>1 hour changing rooms
+						</li>
+						<li>Oversized Storage Lockers
+						</li>
+						<li>Half Day room booking
+						</li>
+						<li>Youth Group Accomodations
+						</li>
+						<li>Child Care for temple events
+						</li>
+						<li>On Site Family History Research Facility
+						</li>
+						<li>Sand Volleyball pits</li>
+						<li>Indoor Park & Playground</li>
+						<li>Inhouse Movie & Video game Hall</li>
+					</ul>
+				</p>
+			</div>
+		</section>
+		<section id="callNow">
+			<div class="cta">
+				<h2>Please speak with our Reception desk so they can walk you through our reservations process</h2>
+				<br>
+				<h2>1-801-888-7777</h2>
+				<a id="reserveButton" href="reservations.html" class="ctaButton">Reserve Now</a>
+				<p>
+					<strong>
+					To begin the process of reserving services on specific date pleae click on the link above and complete the reservation form.
+					</strong>
+				</p>
+			</div>
+		</section>
+		<section class="infoBox" id="container">
+				<div id="main">
+					<h2>Accomodations & Hotel Services</h2>
+					<ul>
+						<li>
+							Special Needs for Senior Family Members
+						</li>
+						<li>
+							Kitchen & Catering Services
+						</li>
+						<li>Reserved Staging areas
+						</li>
+						<li>
+							Decorations & Banquet Services
+						</li>
+						<li>
+							Lighting, Sound, Video Services
+						</li>
+						<li>
+							Videograhy & Photography Services
+						</li>
+						<li>
+							Shuttle Services
+						</li>
+						<li>
+							Family History Research Assistance & Card Prep
+						</li>
+					</ul>
+					<br>
+				</div>
+		</section>
+		<!--Javascript for Responsive NavBar (W3C)-->
+			<script>
+				function myFunction() {
+					var x = document.getElementById("myTopnav");
+					if (x.className === "topnav") {
+					x.className += " responsive";
+					} else {
+					x.className = "topnav";
+					}
+				}
+			</script>
+		<!--7. FOOTER/ CONTACT US-->
+			<footer class="contactInfo">
+					<p>&copy;<script type="text/javascript">
+						document.write(new Date().getFullYear());
+					</script>,  BYU-I  |  CIT 230  |  Term Project  |  Grady W Hodge<br>
+					<a href="resources.html">Site Plan Document</a>
 			</p>
-	
-	</div>
-</section>
-<section id="explanation">
-	<div>
-		<h2>How to Start</h2>
-		<p>
-			<ul>
-				<li>
-					Step 1: Schedule an Event at a temple nearby our Hotel
-				</li>
-				<li>
-					Step 2: Reserve you room and additional services with our hotel.
-				</li>
-				<li>
-					Step 3: Work with our seasoned staff to meet your needs before and after your temple event.
-				</li>
-			</ul>
-		</p>
-	</div>
-</section>
-<section id="callNow">
-	<div class="cta">
-		<h2>Call Us Now and We'll Walk You Through the Process</h2>
-		<p>
-			Our seasoned staff is ready and waiting to help you to gather your family and prepare to enter the temple refreshed and poised ready to listen and learn
-		</p>
-	</div>
-</section>
-<section id="container">
-		<div id="main">
-			<h2>Amenities</h2>
-				<ul>
-					<li>1 hour changing rooms</li>
-					<li>Oversized Storage Lockers</li>
-					<li>Half Day room booking</li>
-					<li>Child Care for temple events</li>
-					<li>Youth Group Accomodations</li>
-					<li>On Site Family History Research Facility</li>
-					<li>Sand Volleyball pits</li>
-					<li>Indoor Park & Playground</li>
-					<li>Inhouse Movie & Video game Hall</li>
-				</ul>
-		</div>
-	</section>
-<!--Javascript for Responsive NavBar (W3C)-->
-	<script>
-		function myFunction() {
-			var x = document.getElementById("myTopnav");
-			if (x.className === "topnav") {
-			x.className += " responsive";
-			} else {
-			x.className = "topnav";
-			}
-		}
-	</script>
-<!--7. FOOTER/ CONTACT US-->
-	<footer class="contactInfo">
-			<p>&copy;<script type="text/javascript">
-				document.write(new Date().getFullYear());
-			</script>,  BYU-I  |  CIT 230  |  Term Project  |  Grady W Hodge<br>
-			<a href="resources.html">Site Plan Document</a>
-	</p>
-</footer>
-</body>
-</html>
+		</footer>
+		</body>
+		</html>
