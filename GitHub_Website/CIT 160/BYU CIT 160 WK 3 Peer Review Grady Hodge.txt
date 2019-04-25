@@ -1,0 +1,4 @@
+﻿This week I had fun taking my time and becoming very familiar with the HTML tags. Since I’ve been exposed to the basics of HTML I dived a little deeper to learn what some of the meta tags were for.
+My peers comments were very supportive and helpful. The most helpful thing about our discussion board were the nice comments from my peers. It was a great confidence builder.  I’ve been very shy about diving in to coding. I’m surprised how much I’ve been picking up through self study. My peers comments helped me recognize I have learned a lot in a short amount of time.
+This week while reviewing my peers code I became familiar with the basics patterns.  I wish I could view them all in an editor where they are properly tabbed, or whatever you called it when you indent to match the closing tab. 
+I couldn’t figure out how to display my code visually. I’m such a novice the simple things allude me. The most basic parts of coding can trip me up for hours.

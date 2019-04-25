@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang ="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Converting Quarts to Liters</title>
+        <!--Write a defining table and a JavaScript program that asks a user for a volume in quarts then converts that value into liters. Your program should correctly handle real numbers such as 7.54.
+        DEFINING TABLE 
+        INPUT   = number of quarts (Vqt) 
+        PROCESS = conversion formula of quarts to liters (VL = Vqt ×0.946352946)
+        OUTPUT  = number of liters (VL)
+        -->
+        <script>
+            function conversion() {
+                var Vqt = document.getElementById("VqtInputBox").value;
+                var converted = parseFloat(Vqt);
+                var VL = converted * 0.946352946;
+
+                document.getElementById("conversionDiv").innerHTML = VL;
+            }
+
+        </script>
+    </head>
+        <body>
+            Enter the volume of quarts: <input type="text" id="VqtInputBox">
+            <button type="button" onclick="conversion()">Converting Quarts to Liters</button>
+        <div id="conversionDiv"></div>
+        </body>
+</html>

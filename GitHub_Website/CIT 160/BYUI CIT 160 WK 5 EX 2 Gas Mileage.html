@@ -1,0 +1,54 @@
+<!--
+    Did you know the Odometer was invented by a Mormon Pioneer 
+    who was tasked by Brigham Young with counting how many times a rag 
+    tied to the spoke of a wheel made a full rotation so they could estimate their travel distance? 
+-->
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Converting Mileage
+        </title>
+        <!--
+            Write a defining table and a JavaScript program to compute the mileage of a vehicle. 
+            Your program should allow the user to enter the beginning and ending odometer readings and the number of gallons of gasoline used 
+            and should output the mileage in miles per gallon. Your program should correctly handle real numbers.
+        
+            Defining Table
+             Input: 3 variables- beginning and ending mileage, and gallons of gas spent
+           Process: subtract ending mileag from beginning mileage and then divide by gallons used
+            Output: display the mpg in real numbers
+        -->
+        <script>
+                      
+             function mpg() {
+                 //declare 3 variables and how/where they are input
+                var begOdo = parseFloat(document.getElementById('begOdoInputBox').value);
+                var endOdo = parseFloat(document.getElementById('endOdoInputBox').value);
+                var gasSpent = parseFloat(document.getElementById('gasSpentInputBox').value);
+
+                //calculate the total distance traveled
+                var dist = endOdo - begOdo;
+
+                //divide miles traveled by amount of gas spent
+                var mileage = dist / gasSpent;
+
+                //print the mpg on screen to user
+                document.getElementById('mpgOutputDiv').innerHTML = mileage;
+             }
+        </script>
+    </head>
+    <body>
+        Enter the beginning and ending mileage of the odometer as well as gallons of gas used during travel:
+        Beginning Odometer: <input type="text" id="begOdoInputBox" size="10">
+        Ending Odometer:    <input type="text" id="endOdoInputBox" size="10">
+        Gallons of Gas:     <input type="text" id="gasSpentInputBox" size="10">
+        <button 
+            type="button" onclick="mpg()">MPG
+        </button>
+        <div 
+            id="mpgoutputDiv">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <meta charset="utf-8">
+    <title>
+        Example 11
+    </title>
+    <head>
+        <script>
+            // Gets 10 or fewer numbers from the user and adds them together.
+        function sum10() {
+            var sum = 0;
+            for (var i = 0;  i < 10;  i++) {
+                var n = parseFloat(document.getElementById("inputNumber").value);
+                if (n == 0) {
+                    break;
+                }
+                sum += n;
+            }
+            alert(sum);
+        </script>
+    </head>
+    <body>
+        Please enter a number <input type="text" id="inputNumber">
+        <button type="button" onclick = "sum10()">
+        </button>
+    </body>
+</html>

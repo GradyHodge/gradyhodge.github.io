@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Should I Stay Or Should I Go Now
+        </title>
+        <!--
+            DEFINING TABLE
+            INPUT:   Click button to find out if you can sleep in
+            PROCESS: Check the computer clock for weekend status and 3 defined holidays
+            OUTPUT:  Display a message confirming it is ok to "Sleep in." or "Get Up!"
+        -->
+        <script>
+        function upAndAtEm() {
+            //pull info from cpu clock
+            var now = new Date();
+            var month = now.getMonth();
+            var dayOfMonth = now.getDate();
+            var dayOfWeek = now.getDay();
+
+            //define weekends & holidays 
+            var weekend = (dayOfWeek == 0 || dayOfWeek == 6)
+            var holiday = (now.getMonth(0) && now.getDate(1)) || (now.getMonth(6) && now.getDate(4)) || (now.getMonth(11) && now.getDate(25));
+        
+        var message;
+        if (dayOfWeek == 0 || dayOfWeek == 6) { 
+            message = "Sleep in."
+        }
+        else if (month == 0 && dayOfWeek ==1){
+            message = "Sleep in."
+        }
+        else if (month == 6 && dayOfWeek ==4) {
+        }
+        else if (month == 11 && dayOfWeek ==25){
+        }
+        else{
+            message = "Get Up!"
+        }
+
+        document.getElementById("messageOutputBox").innerHTML = message;
+        }
+        </script>
+    </head>
+    <body>
+        Is it ok to sleep in? 
+        <button type="button" onclick="upAndAtEm()">
+        Double Check
+        </button>
+        <div id="messageOutputBox"></div>    
+    </body>
+</html>

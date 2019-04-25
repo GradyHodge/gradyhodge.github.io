@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Fifteen</title>
+<script>
+/* Input: user inputs two numbers one & two
+ * Processing: if both one && two > 15 message = true OR one + two > 15 then "True", otherwise "False"
+ * Output: message is "True" or "False"
+ */
+ 
+ function fifteen () {
+    var one = parseFloat(document.getElementById("one").value);
+    var two = parseFloat(document.getElementById("two").value);
+
+ var message;
+ if ((one > 15 && two > 15) || (one + two > 15)) {
+     message = "True";
+ }
+     else {
+         message = "False";
+     }
+
+document.getElementById("output").innerHTML = message;
+ }
+
+
+</script>
+</head>
+
+<body>
+Please enter two numbers:
+<input type="text" id="one" size="5"> 
+<input type="text" id="two" size="5">
+<button type="button" onclick="fifteen ()">Click</button>
+<div id="output"></div>
+</body>
+</html>

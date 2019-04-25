@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset = "utf-8">
+        <title>
+        2 Functions with Arrays
+        </title>
+<!--DEFINING TABLE
+      INPUT: user clicks button
+    PROCESS: sum the first and last value of an array of any length (arrays are objects)
+     OUTPUT: sum of first and last index
+-->
+        <script>
+            function showResults () {
+                var newArray = [17, 8, 9, 5, 20];
+                addEnds(newArray);
+                document.getElementById("sumOutputBox").innerHTML = addEnds(newArray);
+
+            }
+            function addEnds(list) {
+                 // var list = newArray(10: 1); move this to a third function above 
+                 //var list = [17, 8, 9, 5, 20]; another way to create/declare an array
+                 var first = list [0];
+                 var last = list [list.length-1]; //list.length - 1;
+                 var sum = first + last;
+               
+                return sum;
+                
+                //var value = addEnds(list);
+
+                //document.getElementById("sumOutputBox").innerHTML = value; this needs to move up into the third function
+            }
+        </script>
+    </head>
+    <body>
+        Click this button to add the first and last index of an array
+<button type="button" onclick = "showResults()">Add</button>
+<div id="sumOutputBox"></div><br><br>
+    </body>
+</html>

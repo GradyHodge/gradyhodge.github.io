@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+    <html lang="en-us">
+        <head>
+            <meta charset="utf-8">
+            <title>
+                Practice Exam Order of Operation
+            </title>
+
+            <script>
+                function displayArithmetic () {
+                var y = 13;
+                var x = obfuscate (8, 2, z)
+                var arithmetic = "x * 3 + y - z";
+                var quest = Dobfuscate ();
+
+                document.getElementById("output").innerHTML =  "Arithmatic: "+ arithmetic + " = " + quest;
+                }
+
+                function Dobfuscate (x, y, z) {
+                return x * 3 + y – z;
+                
+                }
+
+                 
+                /*function orderOp () {
+                    var a = 7;
+                    var b = 3;
+                    var c= 11;
+                    var arithmetic = "a + b * c - a * c % 2";
+                    var quest = a + b * c - a * c % 2;
+
+                    document.getElementById("output").innerHTML =  "Arithmatic:  " + arithmetic + " =  " + quest;
+                }
+                */
+            </script>
+            <body>
+                <h1> Practice Exam Arithmatice</h1>             
+                   <button type="button" onclick = "displayArithmetic ()">Calculate</button>
+                <div id="output"></div>
+            </body>
+        </head>
+    </html>

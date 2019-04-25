@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+            <meta charset="utf-8">
+            <title>
+                Likening the Scriptures to Ourselves
+            </title>
+            <script>
+            function applyScripture() {
+                var name = document.getElementById('nameInputBox').value;
+
+                var scripture = "Therefore, if this is the case, I would that ye should go in and see " + name +", <br><br> for " + name + " has been laid upon " + name + "'s bed for the space of two days and two nights; <br><br>and some say that " + name + " is not dead, but others say that " + name + " is dead and that he/she stinketh, <br><br>and that " + name + " ought to be placed in the sepulchre; <br><br>but as for myself, to me " + name + " doth not stink.";
+
+                document.getElementById('outputDiv').innerHTML = scripture;
+            }
+            </script>
+    </head>
+
+    <body>
+            <br>
+        Please enter your name: <input type="text" id="nameInputBox">
+        <button type="button" onclick="applyScripture()">Verse Alma 19:5</button>
+        
+        <div id="outputDiv"></div>
+    </body>
+   
+
+</html>

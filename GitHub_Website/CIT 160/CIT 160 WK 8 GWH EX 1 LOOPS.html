@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>
+        Printing Odd Intergers
+    </title>
+    <!--
+        DEFINING TABLE
+          INPUT: user types a single interger
+        PROCESS: get all odd integers between 1 and the number given by user
+                    use while loop
+                    use if statement with a modulous operator to determine odd numbers
+                    add odd numbers to sum variable
+         OUTPUT: display the sum of the odd integers between 1 and number given by user
+    -->
+    <script>
+        function getOddNumbers() {
+            var getNumber = parseFloat(document.getElementById("inputInteger").value);
+            var sum = 0;
+            var i = 0;
+            while (i < getNumber) {
+                i++;
+            if (i % 2 != 0) {
+                sum += i;
+            }
+            }
+            document.getElementById("outputOddNumbers").innerHTML=sum;
+        }
+
+    </script>
+</head>
+    <body>
+        Type an integer here: 
+        <input type="text" id="inputInteger" size="3">
+        <button type="button" onclick="getOddNumbers()">Add up all Odd Numbers
+        </button>
+        <div id="outputOddNumbers">
+        </div>
+    </body>
+</html>

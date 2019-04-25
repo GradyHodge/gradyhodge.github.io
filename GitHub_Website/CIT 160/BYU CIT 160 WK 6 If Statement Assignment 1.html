@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Weather Or Not Appropriate
+        </title>
+        <!--
+            Write a defining table and a program that helps a user choose the correct foot wear for the day’s weather. 
+            DEFINING TABLE
+            INPUT: the weather
+            PROCESSING: if weather is hot then output sandals, if weather is rainy then output galoshes, if weather is snowy then output boots
+            OUTPUT: display appropriate shoe suggestion
+        -->
+        <script>
+            function weatherAproPro() {    
+                var weather = (document.getElementById("weatherInputBox").value);
+
+                var shoe;
+                if (weather == "hot") {
+                    shoe = "sandals";
+                } 
+                else if (weather == "rain") {
+                    shoe = "galoshes";
+                } 
+                else if ( weather == "snow") {
+                    shoe = "boots";
+                }
+                else {
+                    shoe = "shoes";
+                }
+
+                document.getElementById("shoeOutputBox").innerHTML = "According to the weather report you should wear " + shoe + ".";
+            }
+            
+        </script>
+    </head>
+
+    <body>
+        What is today's weather like? <input type="text" id="weatherInputBox"> <br> <br>
+<button type="button" onclick= "weatherAproPro()">Suggest a sensible shoe for the weather</Button>
+
+<div id="shoeOutputBox"></div>
+    </body>
+</html>

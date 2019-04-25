@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Compute the mileage of a vehicle</title>
+<script>
+function mpGallon() {
+var b = parseFloat(document.getElementById('oBeginInputBox').value);
+var e = parseFloat(document.getElementById('oEndInputBox').value); 
+var g = parseFloat(document.getElementById('nGasUsedInputBox').value); 
+var mpg = (e-b)/g;
+var digits = 2;
+var multiplier = Math.pow(10, digits);
+mpg = Math.round(mpg * multiplier) / multiplier; 
+document.getElementById('mpgDiv').innerHTML = mpg;
+}
+</script>
+</head>
+
+<body>
+Enter Beginning reading of Odometer <input type="text" id="oBeginInputBox" size="5"><br>
+Enter Ending reading of Odometer <input type="text" id="oEndInputBox" size="5"><br>
+Enter No of Gallons of Gasoline used <input type="text" id="nGasUsedInputBox" size="5"><br>
+<button type="button" onclick="mpGallon()">Miles Per Gallon</button>
+<div id="mpgDiv"></div>
+</body>
+</html>

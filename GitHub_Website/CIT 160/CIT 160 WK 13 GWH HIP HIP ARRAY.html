@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <title>
+            Hip Hip Array
+        </title>
+<!--
+    Write a defining table and a function named countEvens that counts and returns the number of even integers in an array. The function must have this header:
+function countEvens(list)Hint: To test your two functions, write a separate function that is called from the onclick attribute of a button. This separate test function should create one or more arrays, call the countEvens and multiply functions, and display the values returned from countEvens and multiply.
+-->
+        <meta charset="utf-8">
+<!--
+    DEFINING TABLE
+      INPUT: user clicks a button to display the amount of even numbers counted in a given array
+    PROCESS: use a for loop and modulus to check each index. If the index is even then tally results
+     OUTPUT: display total number of even numbers
+-->
+        <script>
+//declare function
+
+            function outputEvens () {
+                var hurray = [33, 53, 765, 12, 234, 567, 345, 24, 456, 567, 345];
+                var msg = countEvens(hurray);
+
+                document.getElementById ("output").innerHTML = "This array has " + msg + " even numbers in it.";
+            }
+                
+            // THOUGHT PROCESS...       
+                    //call an array method hurray.map(countEvens) 
+                    //COULD USE use a.method map() to create a new array
+                    //COULD USE hurray.filter() The filter() method creates a new array with array elements that passes a test.                                        
+            function countEvens(list) {
+                var indexReview = 0;
+                    for (var i = 0; i < list.length; i++) {
+                        if (list[i] % 2 == 0) {
+                            indexReview++
+                        }  
+                    }
+                    return indexReview;
+                }  
+
+        </script>
+    </head>
+
+    <body>
+        <h1>
+             Counting Up the Even Numbers Within an Array
+        </h1>
+        "Here is a program that counts up the amount of even numbers within the array: <br> [33, 53, 765, 12, 234, 567, 345, 24, 456, 567, 345].<br><br> Click here to find out how many numbers are even:
+        <button type="button" onclick = "outputEvens()">Tally Evens</button><br><br>
+        <div id="output">
+
+        </div>
+    </body>
+</html>

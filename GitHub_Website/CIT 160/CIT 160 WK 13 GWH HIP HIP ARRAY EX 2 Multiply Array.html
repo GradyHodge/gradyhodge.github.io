@@ -1,0 +1,50 @@
+<!--
+    Write a defining table and a function to multiply each element in an array by some value. 
+    The function must have this header:
+    function multiply(list, multiplier)
+    If the multiply function were called like this:
+
+    var list = [ 17, 8, 9, 5, 20 ];
+    var products = multiply(list, 3);
+    The multiply function would return an array with these values: [ 51, 24, 27, 15, 60 ]
+
+    Hint: To test your two functions, write a separate function that is called from the onclick attribute of a button. 
+    This separate test function should create one or more arrays, call the countEvens and multiply functions, 
+    and display the values returned from countEvens and multiply.
+-->
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <meta charset="utf-8">
+    <title>Multiply Array</title>
+   
+    <!--DEFINING TABLE
+                INPUT: NO USER INPUT, JUST CLICK A BUTTON FOR RESULTS;
+              PROCESS: MULTIPLY THE VALUES OF AN ARRAY BY 3;
+               OUTPUT: DISPLAY THE ARRAY;
+    -->
+        <script>
+            function outputMultiply() {
+                var list = [ 17, 8, 9, 5, 20 ]; 
+                var products = multiply(list, 3);   
+                document.getElementById ("spitItOut").innerHTML = "The array is now [" + products + "].";
+            }
+
+            function multiply (list, multiplier) {
+                for (var i = 0; i < list.length; i++) {
+                    list[i] *= multiplier;
+
+                }
+                return list;
+
+            }
+        </script>
+
+        <body>
+<h1>Multiplying the Elements of an Array</h1>
+To multiply the given array by 3: [ 17, 8, 9, 5, 20 ]
+<button type="button" onclick ="outputMultiply()">Click Here</button>
+<br>
+<br>
+<div id="spitItOut"></div>
+        </body>
+</html>

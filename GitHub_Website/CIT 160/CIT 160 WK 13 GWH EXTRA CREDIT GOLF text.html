@@ -1,0 +1,83 @@
+<!--
+    Instructions
+Submission: Please submit a txt file with your code. 
+(Please do not submit an HTML file because iLearn does not let me download them in their original state). 
+I will run these personally and grade you accordingly out of 10 points  (all extra credit). 
+
+Assignment: In the card game named golf, each player tries to collect cards with the lowest value. 
+The game is usually played with a deck of cards that has four suits: spades, hearts, diamonds, and clubs. 
+Each suit has 13 cards: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, and King. 
+At the end of the game, each player calculates his score by adding the value of the cards that he holds in his hand. 
+The value of the numbered cards is the same as their number. However, the value of a Jack, Queen, or King is 10. 
+In some versions of the game, each player has four cards in his hand. In other versions each player has six or eight cards in his hand.
+
+Write a function named golfScore that takes one parameter: an array named hand. 
+This function must compute and return the score for the cards by adding the values of all the cards in hand. 
+For example, if hand were this array: [5, 2, "King", 3, 1, "Queen"], the golfScore function would return 31.
+-->
+<DOCTYPE HTML>
+    <html lang="en-us">
+        <head>
+            <meta charset="utf-8">
+            <meta name="author" content="Grady Hodge">
+            <title>Extra Credit Golf Score</title>
+            
+            <script>
+            function golfScore(hand) {
+                var Queen = 10;
+                var King = 10;
+                var Jack = 10;
+
+                var hand = [5,4,3,9,6,Queen,King,Jack];
+                var array = hand.split(",")
+
+                document.getElementbyId("outputDiv").innerHTML = sum(list);
+            }
+                function sum(list) {
+                    var list = array;
+                    var s = 0;
+                    for (var i = 0; i < list.length; i++){
+                        s += parseInt (list[i]);
+
+                    }
+                    return s;
+                }
+            
+/* EXAMPLE FROM BOOK: SUMMING THE VALUES IN AN ARRAY
+Returns the sum of the values stored in an array.
+function sum(list) {
+    var s = 0;
+    for (var i = 0;  i < list.length;  i++) {
+        s += list[i];
+    }
+    return s;
+}
+*/
+/* ANOTHER EXAMPLE: FROM LACY MARTIN'S HOMEWORK EXAMPLE
+function createArray () {
+var userString = document.getElementById("userArray").value;
+var array = userString.split(",")
+for (i=0; i=array.length; i--) {
+array[i] = parseFloat (array[i]);
+
+}
+document.getElementById("output").innerHTML = createArray();
+
+function multiply(list, multiplier) {
+var list = array
+var multiplier = document.getElementById("userMultiply").value;
+var products
+return products;
+}
+document.getElementById("output2").innerHTML = multiply()
+*/            
+            </script>
+
+            <body>
+                <h1>Golf Score Extra Credit</h1>
+                <button type="button" onclick="golfScore([5,4,3,9,6,'Queen','King','Jack'])">Execute</button>
+                <div id="outputDiv"></div>
+            </body>
+        </head>
+
+    </html>
