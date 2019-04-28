@@ -1,0 +1,65 @@
+<!--
+ Write a defining table and a program to quiz a child on simple arithmetic. 
+ The program should allow a child to enter two numbers and an arithmetic operator (+, −, *, or /) and the child’s answer to the problem. 
+ The program should compute the correct answer and compare it to the child’s answer and output “Correct! Good job.” or “Incorrect. Try again!”
+ -->
+ <!DOCTYPE HTML>
+ <html lang="en-us">
+ <head>
+    <meta charset = "utf-8">
+    <title>Check Your Answers</title>
+    <!--
+        DEFINING TABLE
+          INPUT: input 2 variables,an operator, and supply the calculated answer for any type of addition, subtraction, multiplication and division question.
+        PROCESS: combine the variables with the operators and check if it matches a correct answer.
+         Output: display a message if the answer to the simple arithmetic is correct or incorrect.
+    -->
+    <script>
+        // define 4 variables within a function: 2 numbers, an operand, and the user's answer.
+        function matheMagic() {
+            var xval = parseFloat(document.getElementById("xvalInputBox").value);
+            var sign = document.getElementById("signInputBox").value;
+            var yval = parseFloat(document.getElementById("yvalInputBox").value);
+            var ansr = parseFloat(document.getElementById("ansrInputBox").value);
+            var solution;
+
+        // use conditional statement to find the true solution of any type of simple arithmetic so it can be compared to the answer provided by user.
+            var arithmetic;
+            if (sign =="+") {
+                solution = xval + yval;
+            }
+            else if (sign =="-") {
+                solution = xval - yval;
+            }
+            else if (sign =="*") {
+                solution = xval * yval;
+            }
+            else if (sign =="/") {
+                solution = xval / yval;
+            }
+        //compare any simple arithmetic solution to the correct answer and display a message if it is correct/incorrect.
+           var solution;
+            if (solution == ansr) {
+                message = "Correct! Good job.";
+            }
+            else {
+                message = "Incorrect. Try again!";
+            }
+        //create javascript that will calculate which message to display after the solution and ansr are compared.
+            document.getElementById("messageOutputBox").innerHTML = message;
+        }
+
+    </script>
+</head>
+    <body>
+Enter any simple arithmetic problem and your answer to check if you are right.
+<input type="text" id="xvalInputBox" size="3">
+<input type="text" id="signInputBox" size="2">
+<input type="text" id="yvalInputBox" size="3"> 
+=
+<input type="text" id="ansrInputBox" size="5">
+
+<button type="button" onclick="matheMagic()">Check Your Answer</button>
+<div id="messageOutputBox"></div>
+    </body>
+ </html>

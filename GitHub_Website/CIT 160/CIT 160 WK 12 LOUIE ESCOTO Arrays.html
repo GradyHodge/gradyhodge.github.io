@@ -1,0 +1,56 @@
+<!--Table of Contents Week 12 Assignments W12.07 Peer Review
+W12.07 Peer Review
+ 
+View profile card for Louie Escoto
+
+My Array list [ 50 , 40, 30, 20, 10, 100 ]
+Louie Escoto posted Dec 5, 2018 4:04 AM Subscribe
+This page automatically marks posts as read as you scroll.Adjust automatic marking as read setting
+Here are my two functions:
+-->
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Array list</title>
+<script type="text/javascript">
+        /* Input : No input from user
+        Process: Calls the addEnds(list) function to sum the first and last value in the array and 
+        the getMiddle function for the middle or Average of two middel value.
+      Output : Displays the returned values. */
+
+        function add() {
+            var list = [50 , 40, 30, 20, 10, 100];
+            var tot= addEnds(list);
+            var mid= getMiddle(list);
+            document.getElementById('output').innerHTML ="Sum the First and Last value is => " + tot +"<br>"+ "The middle or Average of two middel value is => "+mid;
+
+        }
+        function addEnds(list) {
+            var first= list[0];
+            var last = list[list.length - 1];
+            var sum = first + last;
+            return sum; 
+        }
+        function getMiddle(list) {
+            if(list.length % 2 === 0) {
+                var middle = list.length /2; // (list.length = 6) / 2 = 3  // middle == 3
+                middle= (list[middle -1] + list[middle]) / 2; // (list[3-1] + list[3]) / 2 OR (30+20)/2=50
+                return middle
+            }
+            else {
+                return list[ ( list.length - 1 ) / 2 ]; // list[Mathround((6-1)/2)] 
+            }
+        }
+</script>
+</head>
+<body>
+<h1> Louie Escoto's Array list [ 50 , 40, 30, 20, 10, 100 ] </h1>
+This program will compute and display the sum of the first and last values in the array list.<br>
+This will also display the middle or the average of the two middle elements of the array list.<br>
+<br>
+<button type="button" onclick="add()">Compute</button>
+<br><br>
+<div id="output"></div>
+</body>
+</html>

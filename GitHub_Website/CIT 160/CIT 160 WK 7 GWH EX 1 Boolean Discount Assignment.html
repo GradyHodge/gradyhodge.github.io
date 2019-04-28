@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+        <meta charset="utf-8">    
+        <title>
+            Boolean Logic Midweek Sales Discoutn
+        </title>
+        <!--
+            Defining Table
+            Input: user inputs subtotal
+            Process: program checks computer clock for todays date, 
+                     if the subtotal is greater than $50
+                     and if the day is a Tue or Wed
+                     Then subtract 10% discount and compute total amount including 6% tax
+            Output: the total amount with sales tax and potentially an additional discount
+        -->
+    <script>
+        function midweekDiscount () {
+            var subtotal = parseFloat(document.getElementById("subtotalInputBox").value);
+            var dayOfWeek = new Date().getDay();
+            var tax = 0.06;
+            var discount;
+            if (subtotal >= 50 && (dayOfWeek == 2 || dayOfWeek == 3)) {
+                discount = ((subtotal - (subtotal * 0.1)) * tax) + subtotal;
+            }
+            else {
+                discount = (subtotal * tax) + subtotal;
+            }
+           var digits = 2;
+            var multiplier = Math.pow(10, digits);
+            discount = Math.round(discount * multiplier) / multiplier;
+
+            document.getElementById("totalOutputBox").innerHTML = discount;
+        }
+    </script>
+</head>
+    <body>
+What is the subtotal of the customer's purchase? <input type="text" id="subtotalInputBox">
+<button type="button" onclick ="midweekDiscount()">
+    Apply any additional discounts to Total Amount
+</button>
+<div id="totalOutputBox"></div>
+    </body>
+</html>

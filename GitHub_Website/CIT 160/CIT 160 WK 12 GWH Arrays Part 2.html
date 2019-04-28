@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset = "utf-8">
+        <title>
+        2 Functions with Arrays
+        </title>
+        <h1>Middle Number</h1>
+<!--DEFINING TABLE
+      INPUT: user clicks button
+    PROCESS: get the middle values of an array
+     OUTPUT: display the middle index or the average of the 2 middle indexes
+-->
+        <script>
+            function showResults () {
+                var newArray = [20, 40, 60, 80, 100];
+                getMiddle(newArray);
+
+                document.getElementById("sumOutputBox").innerHTML = getMiddle(newArray);
+}
+            function getMiddle(list) {
+                //use if/else conditional statement
+                //divide array.length by 2 then use boolean modulus == 0 
+                //if array.length is odd (not == 0) then display middle index (array.length)
+                //if array.length is even then get middle (array.length-1) and (middle array.length +1)all divided by 2 
+                //this will get the average of the two most middle indexes.
+
+                //var middleIndex = (list.length) / 2;                   
+                //var midUpper    = parseInt(middleIndex + 1);             // TRY DECLARING THESE VAR WITHIN IF STATEMENT INSTEAD OF ABOVE
+                //var midAvg      = parseInt(middleIndex + midUpper / 2);
+
+                /*if (middleIndex % 2 != 0) {                                // if condition is ODD, then use just middleIndex
+                    var middleIndex = (list.length) / 2;                   // array length has 5 indexes. 5/2 = 2.5 round up to index 3, value of 3 == 60              
+                    return list[parseInt(middleIndex)];            
+                }
+                    var midAvg;                                            // = (list.length - 1 + list.length) / 2; 
+                    midAvg = (list[list.length - 1] + list[list.length]) /2; //use arithmetic to change indexes into array values
+                    return  midAvg;
+   if(list.length % 2 === 0) { code review from Louie E
+                var middle = list.length /2; // (list.length = 6) / 2 = 3  // middle == 3
+                middle= (list[middle -1] + list[middle]) / 2; // (list[3-1] + list[3]) / 2 OR (30+20)/2=50
+                return middle                 
+                     }
+                */
+                if (list.length % 2 == 0) {
+                    var midAvg = list.length / 2;                                            
+                    midAvg = (list[midAvg - 1] + list[midAvg]) /2; 
+                    return  midAvg
+                }    
+                else {
+                    var middleIndex = (list.length) / 2;               
+                    return list[parseInt(middleIndex)];  
+                }
+                }
+        </script>
+    </head>
+    <body>
+    
+        Here is a function that displays the middle index of an array, and if the array has even numbers, then it displays the average of the two middle indexes.
+        <button type="button" onclick = "showResults()">Get the middle index</button>
+        <div id="sumOutputBox"></div>
+    </body>
+</html>

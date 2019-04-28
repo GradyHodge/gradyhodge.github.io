@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Multiples</title>
+            <script>
+            /* Input: user inputs 3 integers named start, end, and divisor
+            * Processing: find all integers that are evenly divisible by divisor and between start and end inputs
+            * Output: console.log all integers separated by a space
+            */
+
+            function multiples () {
+                var start = parseFloat(document.getElementById("start").value);
+                var end = parseFloat(document.getElementById("end").value);
+                var divisor = parseFloat(document.getElementById("divisor").value);
+
+                var multipleFinder;
+                for (var i = start; ((i >= start) && (i <= end)); i++) {
+                    if (i % divisor == 0) {
+                        document.getElementByID(i + " ");
+                    }
+                }
+
+               document.getElementById("output").innerHTML = multipleFinder;
+            }
+            </script>
+    </head>
+
+    <body>
+        Start:   <input type="text" id="start" size="5"><br>
+        End:     <input type="text" id="end" size="5"><br>
+        Divisor: <input type="text" id="divisor" size="5"><br>
+        <button type="button" onclick="multiples ()">Click</button>
+        <div id="output"></div>
+    </body>
+</html>

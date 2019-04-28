@@ -1,0 +1,34 @@
+
+<script>
+//declare function
+
+function doInputOutput() {
+var array = [33, 53, 765, 12, 234, 567, 345, 24, 456, 567, 345];
+var msg = countEvens(array)
+document.getElementById ("output").innerHTML ="There are " + msg +" even numbers within this Array";
+}
+
+function countEvens(list) {
+var intCount=0
+for (var i = 0; i < list.length; ++i) {
+if(list[i] % 2 === 0) {
+intCount++
+}
+}
+return intCount;
+}
+</script>
+</head>
+
+<body>
+<h1>
+Counting Up the Even Numbers Within an Array
+</h1>
+Here is a program that counts up the amount of even numbers within the array<br>
+[33, 53, 765, 12, 234, 567, 345, 24, 456, 567, 345]<br>
+Click the button to find out.<br>
+<button type="button" onclick = "doInputOutput()">Tally Evens</button>
+<div id="output">
+
+</div>
+</body>

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Volume of a Tetrahedron</title>
+<!--
+    Defining Table
+    Input: length of one leg of a tetrahedron
+    Process: calculate the volume of a tetrahedron
+-->
+<script>
+    function computeVolume() {
+        var length = parseFloat(document.getElementById("length").value);
+        var vol = Math.pow(length, 3) / 6 * (Math.sqrt(2));
+
+        document.getElementById("volumeOutput").innerHTML = vol;
+        //50.91168824543143 answer with extra parenthasese around Math.sqrt
+        //50.91168824543143 answer is the same without additional parenthasese
+    }
+
+
+</script>
+</head>
+
+<body>
+    <h1>Volume of a Tetrahedron</h1>
+    Side Length <input type="text" id="length"><br>
+    <button type="button" onclick="computeVolume()">Volume</button><br>
+    Volume <div id="volumeOutput"></div>
+</body>
+</html>

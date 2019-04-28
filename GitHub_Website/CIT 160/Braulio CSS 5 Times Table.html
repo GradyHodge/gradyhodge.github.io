@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Times Table</title>
+<meta name="description" content="Exercises">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+
+h1, h4{
+margin: 20px 20px 20px 20px;
+}
+
+table, th, tr, td{
+border:1px solid black;
+margin: 20px 20px 20px 20px;
+}
+
+button{
+margin: 20px 20px 20px 20px;
+}
+
+</style>
+
+<script>
+
+
+function times_table() {
+
+var show = "";
+
+for (i=1; i<=12; i++){
+
+multiplier = 5;
+row = i*5;
+
+show += i+ " * " +multiplier+ " = " +row+ "<br>";
+
+}
+
+document.getElementById("total_output").innerHTML = show;
+
+}
+
+</script>
+
+</head>
+<body>
+
+<h1>5 Times Table</h1>
+
+<table>
+<tr>
+<th>5 Times Table</th>
+</tr>
+<tr>
+<td><div id="total_output"></div></td>
+</tr>
+</table>
+
+<button type="button" onclick="times_table()">Calculate Total</button>
+
+</body>
+</html>

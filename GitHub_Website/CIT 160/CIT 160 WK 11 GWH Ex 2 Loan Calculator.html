@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang ="en-us">
+    <head>
+        <meta charset ="utf-8">
+        <title>
+            Loan Calculator
+        </title>        
+<!-- DEFINING TABLE
+      INPUT:
+    PROCESS:
+     OUTPUT:
+
+-->
+        <script>
+/* WRITE FOUR FUNCTIONS
+   Write four functions with these headers:
+   function doPayment()
+   function doBalance()
+   function computePayment(principal, annualRate, years, periodsPerYear)
+   function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentsPaidToDate)
+*/
+function doPayment () {
+    var principal =      parseFloat(document.getElementById("principalInputBox").value);
+    var annualRate =     parseFloat(document.getElementByID("annualRateInputBox").value);
+    var years =          parseFloat(document.getElementByID("yearsInputBox").value);
+    var periodsPerYear = parseFloat(document.getElementByID("numberOfPaymentsInputBox").value);
+
+    var payment = computePayment (principal, annualRate, years, periodsPerYear);
+    var output = Math.round(payment * 100)/100;
+
+    document.getElementByID("computePaymentOutputBox").innnerHTML = output;
+}
+function doBalance () {
+    //this is NOT keeping my code D.R.Y. ?Must I declare these var within a new function?
+    var principal =                 parseFloat(document.getElementById("principalInputBox").value);
+    var annualRate =                parseFloat(document.getElementById("annualRateInputBox").value);
+    var years =                     parseFloat(document.getElementById("yearsInputBox").value);
+    var periodsPerYear =            parseFloat(document.getElementById("numberOfPaymentsInputBox").value);
+    var numberOfPaymentPaidToDate = parseFloat(document.getElementById("numberOfPaymentsPaidToDate").value);
+
+    var balance = computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate);
+    document.getElementByID("computeBalance").innerHTML = balance;
+}
+
+ function computePayment(principal, annualRate, years, periodsPerYear) {
+     payment = (principal * annualRate / periodsPerYear) / (1 - Math.pow((1 + annualrate / periodsPerYear), years * periodsPerYear));
+     return payment;
+ }
+ function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentsPaidToDate) {
+    var paid = computePayment(principal, annualRate, years, periodsPerYear);
+    var payment = principal * (Math.pow(1 + annualRate / periodsPerYear), numberOfPaymentPaidToDate) - (paid * (Math.pow(1 + annualRate / periodsPerYear, numberOfPaymentPaidToDate) - 1) / (annualRate / periodsPerYear);
+    return payment;
+
+ }
+
+        </script>
+    </head>
+    <body>
+<H2>Loan Calculator</H2>
+
+Amount Borrowed (principal 80,000)      <input type="text" id="principalInputBox"> <br>
+Annual interest rate (ex .05)           <input type="text" id="annualRateInputBox"> <br>
+Number of years (30)                    <input type="text" id="yearsInputBox"> <br>
+Payments per years (12)                 <input type="text" id="numberOfPaymentsInputBox">
+
+<button type="button" onclick="doPayment ()">Compute Payment</button>
+<div id="computePaymentOutputBox"></div>
+
+Number of Payments paid to date (180)    <input type="text" id="numberOfPaymentsPaidToDate">
+
+<button type="button" onclick="computeBalance ()">Compute Payoff Amount</button>
+<div id="computeBalance"></div>
+    </body>
+</html> 

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Powers of 2
+        </title>
+            <!-- Write a defining table and a program to display powers of 2 to the 32nd exponent-->
+        <script>
+            //DEFINING TABLE
+            //  INPUT: nothing, user just clicks a button to reveal powers of 2 to the 32nd.
+            //PROCESS: use a for loop to increment the exponent to raise the power. 
+            // OUTPUT: display the results of the powers composed using a for loop.
+            
+            function powerLoop() {
+                for (var i = 0; i <= 32; i++){
+                    var power = Math.pow(2,i);
+                document.write("2 ^ "+ i + " = "+ power +'<br/>');
+                }
+            }   
+            
+        </script>
+    </head>
+
+    <body>
+       Click here to see powers of 2 from 0 to the 32nd exponent:
+
+        <button type="button" onclick ="powerLoop()">View Powers of 2</button>
+
+    </body>
+</html>
